@@ -718,12 +718,12 @@ msgstr ""
 
 #: PServerSRO/language/dummy.php:6
 #: PServerRankingMain/view/p-server-sro/honor-ranking/index.twig:1
-msgid "Honors"
+msgid "Honor"
 msgstr ""
 
 #: PServerSRO/language/dummy.php:7
 #: PServerRankingMain/view/p-server-sro/alliance/index.twig:1
-msgid "Alliances"
+msgid "Unions"
 msgstr ""
 
 #: PServerSRO/language/dummy.php:8

@@ -292,7 +292,7 @@ return [
                         'resource' => 'PServerRanking/sro_ranking_job',
                     ],
                     'top_honor' => [
-                        'label'  => 'Honors',
+                        'label'  => 'Honor',
                         'route' => 'PServerRanking/sro_ranking_honor',
                         'resource' => 'PServerRanking/sro_ranking_honor',
                     ],
@@ -392,7 +392,7 @@ return [
                 ],
             ],
             'top_honor' => [
-                'label'  => 'Honors',
+                'label'  => 'Honor',
                 'route' => 'PServerRanking/sro_ranking_honor',
             ],
             'top_alliance' => [
