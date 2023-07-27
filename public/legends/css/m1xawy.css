@@ -733,7 +733,7 @@ a.button-small:hover {
     bottom: 0px;
     /* top: 50px;
     left: 200px; */
-    padding-top: 60px !important;
+    padding-top: 0 !important;
   }
   /* .cover {
     height: 45%;

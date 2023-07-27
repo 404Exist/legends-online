@@ -119,7 +119,7 @@
     transform: rotate(-45deg);
   }
   .header {
-    /* height: 400px; */
+    height: 400px;
   }
   .content {
     background-size: 100%;
