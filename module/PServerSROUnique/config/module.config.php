@@ -87,7 +87,7 @@ return [
             'ranking' => [
                 'pages' => [
                     'top_unique' => [
-                        'label'  => 'Top Unique',
+                        'label'  => 'Uniques',
                         'route' => 'PServerRanking/sro_ranking_unique',
                         'params' => [
                             'action' => 'top-unique',
@@ -101,7 +101,7 @@ return [
     'pserver' => [
         'ranking' => [
             'top_unique' => [
-                'label'  => 'Top Unique',
+                'label'  => 'Uniques',
                 'route' => 'PServerRanking/sro_ranking_unique',
                 'params' => [
                     'action' => 'top-unique',

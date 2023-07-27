@@ -156,7 +156,7 @@ return [
                 'order' => -10,
                 'pages' => [
                     'top_player' => [
-                        'label' => 'Top Player',
+                        'label' => 'Players',
                         'route' => 'PServerRanking/ranking',
                         'params' => [
                             'action' => 'top-player',
@@ -164,7 +164,7 @@ return [
                         'resource' => 'PServerRanking/ranking',
                     ],
                     'top_guild' => [
-                        'label' => 'Top Guild',
+                        'label' => 'Guilds',
                         'route' => 'PServerRanking/ranking',
                         'params' => [
                             'action' => 'top-guild',
@@ -214,14 +214,14 @@ return [
     'pserver' => [
         'ranking' => [
             'top_player' => [
-                'label' => 'Top Players',
+                'label' => 'Players',
                 'route' => 'PServerRanking/ranking',
                 'params' => [
                     'action' => 'top-player',
                 ],
             ],
             'top_guild' => [
-                'label' => 'Top Guilds',
+                'label' => 'Guilds',
                 'route' => 'PServerRanking/ranking',
                 'params' => [
                     'action' => 'top-guild',

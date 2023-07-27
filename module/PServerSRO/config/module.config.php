@@ -268,7 +268,7 @@ return [
             'ranking' => [
                 'pages' => [
                     'top_trader' => [
-                        'label'  => 'Top Traders',
+                        'label'  => 'Traders',
                         'route' => 'PServerRanking/sro_ranking_job',
                         'params' => [
                             'action' => 'top-trader',
@@ -276,7 +276,7 @@ return [
                         'resource' => 'PServerRanking/sro_ranking_job',
                     ],
                     'top_hunter' => [
-                        'label'  => 'Top Hunters',
+                        'label'  => 'Hunters',
                         'route' => 'PServerRanking/sro_ranking_job',
                         'params' => [
                             'action' => 'top-hunter',
@@ -284,7 +284,7 @@ return [
                         'resource' => 'PServerRanking/sro_ranking_job',
                     ],
                     'top_thieves' => [
-                        'label'  => 'Top Thieves',
+                        'label'  => 'Thieves',
                         'route' => 'PServerRanking/sro_ranking_job',
                         'params' => [
                             'action' => 'top-thieves',
@@ -292,12 +292,12 @@ return [
                         'resource' => 'PServerRanking/sro_ranking_job',
                     ],
                     'top_honor' => [
-                        'label'  => 'Top Honor',
+                        'label'  => 'Honors',
                         'route' => 'PServerRanking/sro_ranking_honor',
                         'resource' => 'PServerRanking/sro_ranking_honor',
                     ],
                     'top_alliance' => [
-                        'label'  => 'Top Unions',
+                        'label'  => 'Unions',
                         'route' => 'PServerRanking/sro_alliance',
                         'resource' => 'PServerRanking/sro_alliance',
                     ],
@@ -371,32 +371,32 @@ return [
     'pserver' => [
         'ranking' => [
             'top_trader' => [
-                'label'  => 'Top Trader',
+                'label'  => 'Trader',
                 'route' => 'PServerRanking/sro_ranking_job',
                 'params' => [
                     'action' => 'top-trader',
                 ],
             ],
             'top_hunter' => [
-                'label'  => 'Top Hunter',
+                'label'  => 'Hunters',
                 'route' => 'PServerRanking/sro_ranking_job',
                 'params' => [
                     'action' => 'top-hunter',
                 ],
             ],
             'top_thieves' => [
-                'label'  => 'Top Thieves',
+                'label'  => 'Thieves',
                 'route' => 'PServerRanking/sro_ranking_job',
                 'params' => [
                     'action' => 'top-thieves',
                 ],
             ],
             'top_honor' => [
-                'label'  => 'Top Honor',
+                'label'  => 'Honors',
                 'route' => 'PServerRanking/sro_ranking_honor',
             ],
             'top_alliance' => [
-                'label'  => 'Top Alliance',
+                'label'  => 'Alliance',
                 'route' => 'PServerRanking/sro_alliance',
             ],
         ],

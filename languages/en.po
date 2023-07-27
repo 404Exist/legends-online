@@ -619,12 +619,12 @@ msgstr ""
 
 #: PServerRanking/language/dummy.php:4
 #: PServerRankingMain/view/p-server-ranking/ranking/top-player.twig:1
-msgid "Top Player"
+msgid "Players"
 msgstr ""
 
 #: PServerRanking/language/dummy.php:5
 #: PServerRankingMain/view/p-server-ranking/ranking/top-guild.twig:1
-msgid "Top Guild"
+msgid "Guilds"
 msgstr ""
 
 #: PServerRanking/language/dummy.php:6
@@ -701,29 +701,29 @@ msgstr ""
 #: PServerSRO/language/dummy.php:3
 #: PServerSRO/view/helper/ranking-job-trader.phtml:2
 #: PServerRankingMain/view/p-server-sro/ranking-job/top-trader.twig:1
-msgid "Top Trader"
+msgid "Traders"
 msgstr ""
 
 #: PServerSRO/language/dummy.php:4
 #: PServerSRO/view/helper/ranking-job-hunter.phtml:2
 #: PServerRankingMain/view/p-server-sro/ranking-job/top-hunter.twig:1
-msgid "Top Hunter"
+msgid "Hunters"
 msgstr ""
 
 #: PServerSRO/language/dummy.php:5
 #: PServerSRO/view/helper/ranking-job-thieves.phtml:2
 #: PServerRankingMain/view/p-server-sro/ranking-job/top-thieves.twig:1
-msgid "Top Thieves"
+msgid "Thieves"
 msgstr ""
 
 #: PServerSRO/language/dummy.php:6
 #: PServerRankingMain/view/p-server-sro/honor-ranking/index.twig:1
-msgid "Top Honor"
+msgid "Honors"
 msgstr ""
 
 #: PServerSRO/language/dummy.php:7
 #: PServerRankingMain/view/p-server-sro/alliance/index.twig:1
-msgid "Top Alliance"
+msgid "Alliances"
 msgstr ""
 
 #: PServerSRO/language/dummy.php:8
@@ -748,7 +748,7 @@ msgstr ""
 
 #: PServerSROUnique/language/dummy.php:3
 #: PServerRankingMain/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:1
-msgid "Top Unique"
+msgid "Unique"
 msgstr ""
 
 #: SROItemDetails/src/SROItemDetails/Item/ItemData.php:108

@@ -3,7 +3,13 @@
   border: none;
 }
 .footer {
-  background: none;
+    /* background: url(../images/fon-bottom.jpg) center bottom no-repeat;
+    margin-top: 10px;
+    min-height: 633px; */
+
+    padding: 70px 40px;
+    background: url(../images/fon-bottom.jpg) center bottom no-repeat;
+    background-size: 120% 100%;
 }
 .container .btn {
   display: inline-block;
@@ -58,7 +64,7 @@ body {
   padding-left: 0;
 }
 .footer {
-  padding: 40px 0px;
+    padding: 40px 5px;
 }
 .form-check-input {
   padding: 0;
@@ -349,9 +355,6 @@ button,
 .download-button span {
   color: #fff;
 }
-.blockMore {
-  border-bottom: solid 1px #ffd700;
-}
 .content a {
   color: #000;
   font-weight: bold;
@@ -616,6 +619,7 @@ a {
   display: flex;
   align-items: center;
   font-family: unset;
+  justify-content: center;
 }
 .server-online span {
   color: #ffd700;
@@ -650,6 +654,10 @@ a {
 }
 .topranks a.button-medium:hover {
   color: #ffd700;
+}
+.container.justify-content-between.margin {
+    justify-content: center!important;
+    margin-top: 15px;
 }
 .topPanel a.button {
   font-weight: bold;
