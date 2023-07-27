@@ -1,0 +1,8 @@
+<div>
+    <h3><?= $this->translate('Donate-Bonus') ?></h3>
+    <?= sprintf(
+            $this->translate('You will get %s%% more until %s'),
+            $this->percent,
+            '<span class="timerCountdown" id="idTimeCountdown_donate_bonus" data-time="' . $this->to . '"></span>'
+    ) ?>
+</div>

@@ -1,0 +1,30 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+    {{ translate('Donate Stats') }}
+{% endblock title %}
+
+{% block content %}
+
+    <div class="row">
+        {% if currentLevel %}
+            <div class="col-12">
+                <h6 class="text-right float-end">{{ currentLevel.getName() }}</h6>
+            </div>
+        {% endif %}
+
+        <div class="col-12">
+            <h3 class="d-inline">{{ translate('Your Bonus per Order') }}:</h3>
+            <button type="submit" class="btn btn-primary btn-success big">{{ currentLevel ? currentLevel.getPercent() : 0 }}%</button>
+        </div>
+
+        {% if nextLevel %}
+            <div class="col-12">
+                <div class="progress mt-2" style="height:35px;">
+                    <div class="progress-bar bg-info" style="width:{{ (100 * totalAmount) / nextLevel.getAmount() }}%;height:35px"><b>{{ totalAmount|number_format(0) }} / {{ nextLevel.getAmount()|number_format(0) }}</b></div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock content %}

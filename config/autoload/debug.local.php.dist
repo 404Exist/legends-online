@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'laminas-developer-tools' => [
+		/**
+		 * General Profiler settings
+		 */
+		'profiler' => [
+			'enabled' => true,
+			'strict' => true,
+			'flush_early' => true,
+			'cache_dir' => 'data/cache',
+			'matcher' => [],
+			'collectors' => [],
+		],
+		/**
+		 * General Toolbar settings
+		 */
+		'toolbar' => [
+			'enabled' => true,
+			'auto_hide' => true,
+			'position' => 'bottom',
+			'version_check' => true,
+			'entries' => [],
+		],
+	],
+    'view_manager' => [
+        'display_not_found_reason' => true,
+        'display_exceptions'       => true,
+    ],
+];

@@ -1,0 +1,45 @@
+{% extends 'layout/layout' %}
+
+{% do
+    headLink()
+		.appendStylesheet(
+			'https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/modern.min.css',
+			'all'
+		)
+%}
+{% do
+    headScript()
+		.appendFile(
+			'https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/jquery.sceditor.bbcode.min.js',
+			'text/javascript',
+			{'crossorigin' : 'anonymous'}
+		)
+%}
+
+{% block content %}
+	{{ formWidget(form) }}
+	{% for key, curEntry in entry %}
+		<label>{{ getUserAlias(curEntry.getUser) }} <small>{{ dateTimeFormatTime(curEntry.getCreated) }}</small></label><br/>
+		{{ bbCodeParser(curEntry.getMemo()) }}<br />
+		<hr />
+	{% endfor %}
+{% endblock content %}
+
+{% block script %}
+	<script type="text/javascript">
+        jQuery(function() {
+            // with SCEditor
+            jQuery("textarea").sceditor({
+                format: "bbcode",
+                toolbar: "bold,italic,underline|source,left,center,right,justify,size,color,bulletlist,orderedlist,code,horizontalrule,image,email,link,emoticon,youtube",
+                width: "98%",
+                height: "200px",
+                resizeWidth: false,
+                emoticonsRoot : "{{ basePath() }}/minified/",
+                style: "https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/modern.min.css",
+                locale: "no-NB",
+                bbcodeTrim: true
+            }).sceditor("instance").sourceMode(true);
+        });
+	</script>
+{% endblock script %}

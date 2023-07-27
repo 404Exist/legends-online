@@ -1,0 +1,35 @@
+<h2>{{ translate(label) }}</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            {% for key, entry in resultRowSettings %}
+                <th>{{ translate(entry['label']) }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        {% set i = (ranking.getCurrentPageNumber() - 1) * ranking.getDefaultItemCountPerPage() + 1 %}
+        {% for key, rank in ranking %}
+            <tr>
+                <td>{{ i }}</td>
+                {% for key, entry in resultRowSettings %}
+                    <td>
+                        {% if (entry['type'] == 'link' and rank[entry['typeCol']] > 0) %}
+                            {% set params = (entry['params'] is empty ? [] : entry['params']) %}
+                            {% set params = params|merge({'id' : rank[entry['typeCol']]}) %}
+                            <a href="{{ url(entry['route'], params) }}">{{ rank[entry['col']] }}</a>
+                        {% else %}
+                            {{ rank[entry['col']] }}
+                        {% endif %}
+                    </td>
+                {% endfor %}
+            </tr>
+            {% set i = i + 1 %}
+        {% endfor %}
+    </table>
+</div>
+
+{% if ranking %}
+    {{ paginationControl(ranking, 'Sliding', 'p-server-core/paginator', {'route' : 'PServerRanking/sro_custom_ranking', 'params': {'type' : type}, 'ajax' : '#content-replace'}) }}
+{% endif %}

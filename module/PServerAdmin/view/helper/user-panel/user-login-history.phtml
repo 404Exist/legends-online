@@ -1,0 +1,22 @@
+<div class="card panel-default mb-3">
+    <div class="card-header"><?= $this->translate('LoginHistory') ?> <small><?= $this->translate('last') ?> 10</small></div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <th>#</th>
+                    <th><?= $this->translate('IP') ?></th>
+                    <th><?= $this->translate('LoginTime') ?></th>
+                </tr>
+                <?php /** @var \PServerCore\Entity\LoginHistory $loginHistory */ ?>
+                <?php foreach ($this->loginHistoryList as $key => $loginHistory) : ?>
+                <tr>
+                    <td><?= $key + 1 ?></td>
+                    <td><?= $this->escapeHtml($loginHistory->getIp()) ?></td>
+                    <td><?= $this->dateTimeFormatTime($loginHistory->getCreated()) ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+    </div>
+</div>

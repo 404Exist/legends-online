@@ -1,0 +1,41 @@
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+		<tr>
+			<th>#</th>
+			<th>{{ translate('Character') }}</th>
+			<th>{{ translate('Level') }}</th>
+			{% if (member.getIterator()[0].getCharacter.getItemPoints() is not same as(null)) %}
+				<th>{{ translate('ItemPoints') }}</th>
+			{% endif %}
+		</tr>
+		</thead>
+		{% set i = (member.getCurrentPageNumber() - 1) * member.getItemCountPerPage() + 1 %}
+		{% for key, player in member %}
+			<tr>
+				<td>{{ i }}</td>
+				<td><a href="{{ url('PServerRanking/character', {'id':player.getCharacter().getId()}) }}">{{ player.getCharacter().getName() }}</a></td>
+				<td>{{ player.getCharacter.getLevel() }}</td>
+				{% if (player.getCharacter.getItemPoints() is not same as(null)) %}
+					<td>{{ player.getCharacter.getItemPoints() }}</td>
+				{% endif %}
+			</tr>
+			{% set i = i + 1 %}
+		{% endfor %}
+	</table>
+</div>
+{% if member %}
+	{{ paginationControl(
+		member,
+		'Sliding',
+		'p-server-core/paginator',
+		{
+			'route' : 'PServerRanking/guild',
+			'params' : {
+				'id' : guild.getId,
+				'action' : 'member'
+			},
+			'ajax':'#pServerCMSGuildMember'
+		}
+	) }}
+{% endif %}

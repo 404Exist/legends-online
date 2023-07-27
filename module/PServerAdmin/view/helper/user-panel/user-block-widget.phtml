@@ -1,0 +1,16 @@
+<div class="card card-default mb-3">
+    <div class="card-header"><?= $this->translate('Block') ?></div>
+    <div class="card-body">
+        <?php if ($this->userBlock != false) : ?>
+            <?= $this->translate('User is blocked') ?>.
+            <?= $this->translate('Reason') ?>: <?= $this->escapeHtml($this->userBlock->getReason()) ?>
+            [<?= $this->translate('until') ?> <?= $this->dateTimeFormatTime($this->userBlock->getExpire()) ?>]
+            <br />
+            <a href="<?= $this->url('PServerAdmin/user_block', ['usrId' => $this->user->getId(), 'action' => 'remove']) ?>">
+                <?= $this->translate('UnBlock') ?>
+            </a>
+        <?php endif; ?>
+        <?php $this->blockForm->setAttribute('action', $this->url('PServerAdmin/user_block', ['action' => 'add', 'usrId' => $this->user->getId()])) ?>
+        <?= $this->formWidget($this->blockForm) ?>
+    </div>
+</div>

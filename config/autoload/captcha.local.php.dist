@@ -1,0 +1,11 @@
+<?php
+return [
+	'pserver' => [
+      'captcha' => [
+          'type' => \PServerCore\Service\CaptchaHandling::TYPE_RECAPTCHA, // only ReCaptcha V2
+          'site_key' => '<SITE KEY V2>',
+          'secret_key' => '<SECRET KEY V2>',
+          'theme' => 'light', //or dark
+      ],
+	],
+];

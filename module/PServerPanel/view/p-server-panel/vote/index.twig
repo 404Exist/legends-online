@@ -1,0 +1,71 @@
+{% extends 'layout/layout' %}
+
+{% block content %}
+	{% if errorMessages is not empty %}
+		<div class="alert alert-danger" role="alert">
+			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">{{ translate('Close') }}</span></button>
+			{% for errorText in errorMessages %}
+				{{ errorText }}<br />
+			{% endfor %}
+		</div>
+	{% endif %}
+
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>{{ translate('Name') }}</th>
+					<th>{{ translate('Coins') }}</th>
+					<th>{{ translate('Timeleft') }}</th>
+					<th>{{ translate('Timeout') }}</th>
+				</tr>
+			</thead>
+			{% for key, voteSite in voteSites %}
+				<tr>
+					<td>
+						{% if voteHistory[voteSite.getId] is empty %}
+							<a href="{{ url('PServerPanel/vote', {'action':'detail', 'id':voteSite.getId()}) }}"
+									{{ voteSite.getType() != 0 ? 'target="_blank"' : '' }}
+							>
+						{% endif %}
+
+							{{ voteSite.getTitle() }}
+
+						{% if voteHistory[voteSite.getId] is empty %}
+							</a>
+						{% endif %}
+					</td>
+					<td>{{ voteSite.getCoins() }}</td>
+					<td {% if voteHistory[voteSite.getId] is not empty %}
+							id="vote_{{ voteSite.getId }}" class="timeLine" data-endtime="{{ voteHistory[voteSite.getId].getExpire().getTimestamp() }}"
+						{% endif %}
+					>
+						00:00:00
+					</td>
+					<td>{{ translate('%sh')|format(voteSite.getTimeout() / 60 / 60) }}</td>
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+{% endblock content %}
+
+{% block script %}
+	<script type="text/javascript">
+		var timerId = {};
+		jQuery(document).ready(function(){
+			jQuery('.timeLine').each(function(){
+				timerId[jQuery(this).attr('id')] = jQuery(this).data('endtime');
+				loadCheckVote();
+			});
+			test = window.setInterval('loadCheckVote();',999);
+		});
+
+		function loadCheckVote() {
+			jQuery.each(timerId, function(idVoteEntry, endTime) {
+				if(!tTimer(iTimeStamp, endTime, idVoteEntry)){
+					clearInterval(timerId[idVoteEntry]);
+				}
+			});
+		}
+	</script>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+    {{ translate('Guild - %s')|format(guild.getName()) }}
+{% endblock title %}
+
+{% block content %}
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tr>
+				<th>{{ translate('Guild') }}</th>
+				<th>{{ guild.getName() }}</th>
+			</tr>
+			<tr>
+				<th>{{ translate('Level') }}</th>
+				<th>{{ guild.getLevel() }}</th>
+			</tr>
+			{% if (guild.getItemPoints() is not same as(null)) %}
+				<tr>
+					<th>{{ translate('ItemPoints') }}</th>
+					<th>{{ guild.getItemPoints() }}</th>
+				</tr>
+			{% endif %}
+			<tr>
+				<th>{{ translate('Member') }}</th>
+				<th>{{ member.getTotalItemCount() }}</th>
+			</tr>
+            {% for member in guild.getMemberList %}
+				{% if member.getMemberClass == 0 %}
+				<tr>
+					<th>{{ translate('Leader') }}</th>
+					<th><a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a></th>
+				</tr>
+				{% endif %}
+            {% endfor %}
+			{% if (guild.getAlliance() != null) and guild.getAlliance().getId() > 0 %}
+				<tr>
+					<th>{{ translate('Alliance') }}</th>
+					<th><a href="{{ url('PServerRanking/sro_alliance', {'action': 'detail', 'id': guild.getAlliance().getId()}) }}">{{ guild.getAlliance().getMasterGuild().getName() }}</a></th>
+				</tr>
+			{% endif %}
+		</table>
+	</div>
+
+	<h2>{{ translate('Member') }}</h2>
+
+	<div id="pServerCMSGuildMember">
+        {% include 'p-server-ranking/guild/member' %}
+	</div>
+
+{% endblock content %}

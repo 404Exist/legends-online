@@ -1,0 +1,7 @@
+Hello,<br />
+<br />
+you have the following usernames under your email:<br />
+<br />
+<?php foreach ($this->users as $user) : ?>
+    - <?= $user->getUsername(); ?><br />
+<?php endforeach; ?>

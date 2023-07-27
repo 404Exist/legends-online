@@ -1,0 +1,4 @@
+<?= sprintf($this->translate('Ticket UPDATE - "%s"'), $this->ticketSubject->getSubject()) ?>
+    <br/>
+    <br/>
+<?= $this->bbCodeParser($this->ticketEntry->getMemo()) ?>

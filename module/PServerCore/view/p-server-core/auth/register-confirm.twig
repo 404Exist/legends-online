@@ -1,0 +1,20 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+    {{ translate('Register Confirm') }}
+{% endblock title %}
+
+{% block content %}
+
+    {% if passwordSame %}
+        <form action="" method="post">
+            <button id="pserverCmsConfirmButton" class="btn btn-primary d-none" type="submit">{{ translate('register complete') }}</button>
+        </form>
+        <script type="application/javascript">
+            document.getElementById('pserverCmsConfirmButton').click();
+        </script>
+    {% else %}
+        {{ formWidget(registerForm) }}
+    {% endif %}
+
+{% endblock content %}

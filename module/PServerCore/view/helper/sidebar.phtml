@@ -1,0 +1,8 @@
+<?= $this->loggedInWidgetPServerCore() ?>
+<?= $this->serverInfoWidgetPServerCore() ?>
+<?= $this->timerWidgetPServerCore() ?>
+<?= $this->viewHelperExists('fortressGuildViewSro') ? $this->viewCache('fortressGuildViewSro', 180) : '' ?>
+<?= $this->viewHelperExists('uniqueKillListPServerSROUnique') ? $this->viewCache('uniqueKillListPServerSROUnique', 180) : '' ?>
+<?= $this->viewHelperExists('pserverSROPvpKillHistoryWidget') ? $this->viewCache('pserverSROPvpKillHistoryWidget', 180) : '' ?>
+<?= $this->viewHelperExists('pserverSROJobKillHistoryWidget') ? $this->viewCache('pserverSROJobKillHistoryWidget', 180) : '' ?>
+<?= $this->discordWidget() ?>

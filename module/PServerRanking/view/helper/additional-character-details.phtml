@@ -1,0 +1,4 @@
+<?= $this->viewHelperExists('uniqueKillHistoryCharacterPServerSROUnique') ? $this->uniqueKillHistoryCharacterPServerSROUnique($this->character) : '' ?>
+<?= $this->viewHelperExists('characterEachUniquePointsPServerSROUnique') ? $this->characterEachUniquePointsPServerSROUnique($this->character) : '' ?>
+<?= $this->viewHelperExists('pserverSROPvpKillHistory') ? $this->pserverSROPvpKillHistory($this->character->getId()) : '' ?>
+<?= $this->viewHelperExists('pserverSROJobKillHistory') ? $this->pserverSROJobKillHistory($this->character->getId()) : '' ?>

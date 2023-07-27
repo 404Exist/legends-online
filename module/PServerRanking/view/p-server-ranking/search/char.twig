@@ -1,0 +1,29 @@
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>{{ translate('Character') }}</th>
+            <th>{{ translate('Guild') }}</th>
+            <th>{{ translate('Level') }}</th>
+        </tr>
+        </thead>
+        {% set i = (ranking.getCurrentPageNumber() - 1) * ranking.getDefaultItemCountPerPage() + 1 %}
+        {% for key, player in ranking %}
+            <tr>
+                <td>{{ i }}</td>
+                <td><a href="{{ url('PServerRanking/character', {'id':player.getId()}) }}">{{ player.getName() }}</a></td>
+                <td>
+                    {{
+                    player.getGuild().getId()>0 ?
+                    ('<a href="'~url('PServerRanking/guild', {'id': player.getGuild().getId()})~'">'~player.getGuild().getName()~'</a>')|raw
+                    :
+                    ''
+                    }}
+                </td>
+                <td>{{ player.getLevel() }}</td>
+            </tr>
+            {% set i = i + 1 %}
+        {% endfor %}
+    </table>
+</div>

@@ -1,0 +1,33 @@
+<?php
+/* @var $container Laminas\Navigation\Navigation */
+$container = $this->container;
+if (! $active = $container->findBy('id', 'character_panel')) {
+    return '';
+}
+/** @var \Laminas\Navigation\Page\AbstractPage $page */
+?>
+<?php foreach ($active as $page): ?>
+    <?php if (!$this->navigation()->accept($page, false)) {
+        continue;
+    }
+    ?>
+
+    <div class="d-grid my-2">
+        <button
+                data-url="<?= $page->getHref() ?>"
+                data-jsonResponse="<?= $page->get('json') ? 1 : 0 ?>"
+                class="btn btn-primary disabled characterInteraction btn-block<?= $page->isActive(true) ? ' active' : '' ?>"
+        >
+            <?php if (isset($page->icon)) : ?>
+                <i class="<?= $page->get('icon') ?>"></i>
+            <?php endif; ?>
+            <?= $this->escapeHtml(
+                $this->translate(
+                    $page->getLabel(),
+                    $this->navigation($container)->getTranslatorTextDomain()
+                )
+            );
+            ?>
+        </button>
+    </div>
+<?php endforeach ?>

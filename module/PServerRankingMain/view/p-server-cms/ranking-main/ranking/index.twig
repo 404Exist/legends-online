@@ -1,0 +1,22 @@
+{% extends 'layout/layout' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-3">
+            {% for key, entry in naviList %}
+                {% if (isAllowed(entry['route'])) %}
+                <div class="d-grid my-2">
+                    <button class="btn btn-primary ranking-main-button" data-link="{{ url(entry['route'], entry['params'] is empty ? [] : entry['params']) }}">
+                        {{ translate(entry['label']) }}
+                    </button>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div id="content-replace" class="col-md-9">
+            {% include template %}
+        </div>
+    </div>
+
+{% endblock content %}

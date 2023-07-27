@@ -1,0 +1,217 @@
+{{ doctype() }}
+<html lang="{{ primaryLanguage() }}">
+<head>
+	<meta charset="utf-8">
+	{% set titleText %}
+		{% block title %}{{ navigationWidgetPServerCore().menu('Laminas\\Navigation\\Default').getContainer().findAllBy('active', true)|last.getLabel }}{% endblock title %}
+	{% endset %}
+	<title>{{ titleText|spaceless }} >> {{ generalSettingsPServerCore().getServerName() }}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta %}{% endblock meta %}
+
+	<!-- styles -->
+    {{ headLink({'rel' : 'icon', 'type' : 'image/x-icon', 'href' : generalSettingsPServerCore().getFavicon()}, 'PREPEND')
+		.appendStylesheet(
+			'/assets/bootstrap-5.1.3-dist/css/bootstrap.min.css',
+			'screen'
+		)
+		.appendStylesheet(
+			basePath('/css/layout.css'),
+			'screen'
+		)
+		.appendStylesheet(
+			'https://use.fontawesome.com/releases/v5.15.3/css/all.css',
+			'screen',
+			true,
+			{'crossorigin' : 'anonymous'}
+		)|raw
+    }}
+	<meta property="og:url" content="{{ serverUrl(true) }}" />
+    <meta property="og:locale" content="{{ primaryLanguage() }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ generalSettingsPServerCore().getServerName() }}"/>
+    <meta property="og:title" content="{{ generalSettingsPServerCore().getServerName() }} - {{ titleText|spaceless }}" />
+    <meta property="og:image" content="{{ serverUrl(basePath('/images/logo-default.png')) }}" />
+    <meta property="og:image:secure_url" content="{{ serverUrl(basePath('/images/logo-default.png')) }}" />
+	{% if translateMapping()|length > 1 %}
+		{% for language, name in translateMapping() %}
+			<link rel="alternate" hreflang="{{ language }}" href="{{ serverUrl() ~ localeUrl(language) }}"/>
+		{% endfor %}
+	{% endif %}
+
+    {% block style %}{% endblock style %}
+</head>
+<body data-theme="{{ generalSettingsPServerCore().getThemeColorMode() }}">
+
+<div class="modal fade" id="modalStatus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="myModalLabel">{{ translate('Status') }}</h5>
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body text"></div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="myModalSearchLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="myModalSearchLabel">{{ translate('Search') }}</h5>
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body text">
+				{{ pServerRankingSearchCharacter() }}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="sticky-top">
+	<div class="top">
+		<div class="container">
+			<ul class="loginbar float-end">
+				<li><span class="cursor" data-bs-toggle="modal" data-bs-target="#modalSearch"><i class="fas fa-search"></i></span></li>
+				<li><span class="strich">|</span></li>
+				{% if translateMapping()|length > 1 %}
+					<li class="dropdown">
+						<a href="" class="new dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img width="24" src="{{ basePath() }}/assets/flags/{{ primaryLanguage()|upper }}.png" alt="{{ primaryLanguage() }}"></a>
+						<div class="dropdown-menu">
+							{% for language, name in translateMapping() %}
+								{% if language != primaryLanguage() %}
+									<a class="dropdown-item" href="{{ localeUrl(language) }}"><img src="{{ basePath() }}/assets/flags/{{ language|upper }}.png" alt="{{ name|raw }}">&nbsp;{{ name|raw }}</a>
+								{% endif %}
+							{% endfor %}
+						</div><!-- dropdown-menu -->
+					</li>
+					<li><span class="strich">|</span></li>
+				{% endif %}
+				{% if generalSettingsPServerCore().getThemeColorMode() == 'switch' %}
+					<li><span id="themeSwitch" class="theme-switch"><i class="far fa-lightbulb"></i></span></li>
+					<li><span class="strich">|</span></li>
+				{% endif %}
+				{% if isAllowed('small-user-auth','index') %}
+					<li><a href="{{ url('small-user-auth',{'action':'register'}) }}">{{ translate('Register') }}</a></li>
+					<li><span class="strich">|</span></li>
+					<li><a href="{{ url('small-user-auth') }}">{{ translate('Login') }}</a></li>
+				{% endif %}
+				{% if isAllowed('small-user-auth','logout') %}
+					<li><a href="{{ url('small-user-auth',{'action':'logout'}) }}">{{ translate('Logout') }}</a></li>
+				{% endif %}
+			</ul>
+
+			{% if generalSettingsPServerCore().getThemeColorMode() == 'switch' %}
+			<script type="application/javascript">
+				const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+				if (currentTheme) {
+					document.documentElement.setAttribute('data-theme', currentTheme);
+
+					if (currentTheme === 'dark') {
+						const elementThemeSwitch = document.getElementById("themeSwitch");
+						elementThemeSwitch.classList.add("dark-theme");
+					}
+				}
+			</script>
+			{% endif %}
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<nav class="navbar-default navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="{{ url( 'PServerCore' ) }}"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					{{ navigationWidgetPServerCore().menu('default').setPartial('p-server-core/navigation')|raw }}
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+
+{% block breadcrumbs %}
+	<!--=== Breadcrumbs ===-->
+	<div class="breadcrumbs margin-bottom-30">
+		<div class="container">
+			<h1>
+				{{ titleText|spaceless }}
+				<small class="float-end">{{ navigationWidgetPServerCore().breadcrumbs('Laminas\\Navigation\\Default').setMinDepth(0).setRenderInvisible(true).setSeparator(' / ')|raw }}</small>
+				<span class="clearfix"></span>
+			</h1>
+		</div><!--/container-->
+	</div><!--/breadcrumbs-->
+	<div class="clearfix"></div>
+{% endblock %}
+
+
+<div class="container">
+	<div class="row">
+		{% if isAllowed('PServerPanel/resend_register') %}
+			<div class="col-sm-12">
+				<div class="alert alert-warning">
+					{{ translate('Your account is not confirmed via email, in order to use all functions you have to confirm your email.') }}
+				</div>
+			</div>
+		{% endif %}
+
+		{% block fullContent %}
+		<div class="col-sm-9">
+            {% block content %}{{ content|raw }}{% endblock content %}
+		</div>
+		<div class="col-sm-3">
+            {{ sidebarWidget() }}
+		</div>
+		{% endblock fullContent %}
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<a class="col-sm-3 margin-top-20" href="{{ url('PServerCore') }}"><img src="{{ basePath() }}/images/logo-default.png" alt="..."></a>
+            {{ navigationWidgetPServerCore().menu('Laminas\\Navigation\\Footer').setPartial('p-server-core/footer-navigation')|raw }}
+			<div class="col-sm-12">
+				<span class="footerheadlines">Coded by <a href="https://github.com/kokspflanze" title="KoKsPfLaNzE - Backend/Frontend DEVELOPER" target="_blank">KoKsPfLaNzE</a></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ headScript()
+.prependFile(
+    'https://code.jquery.com/jquery-3.6.0.min.js',
+    'text/javascript',
+    {'crossorigin' : 'anonymous'}
+)
+.appendFile(
+    '/assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
+    'text/javascript'
+)
+.appendFile(
+    basePath('/js/function.js')
+)|raw
+}}
+
+<script type="text/javascript">
+    var ServerTime = new Date( {{ "now"|date("Y, n, j, G, i, s") }} );
+    var iTimeStamp = {{ "now"|date("U") }} - Math.round( + new Date() / 1000 );
+    startClockTimer('#idTimerClock');
+</script>
+
+{% block script %}{% endblock script %}
+
+</body>
+</html>

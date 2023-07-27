@@ -1,0 +1,97 @@
+{% extends 'layout/admin' %}
+
+{% block title %}
+    - {{ user.getUsername }} [{{ user.getId }}]
+{% endblock title %}
+
+{% block content %}
+	{% if errorMessages %}
+		<div class="alert alert-danger">
+			{% for key, message in errorMessages %}
+				{{ message }}<br />
+			{% endfor %}
+		</div>
+	{% endif %}
+
+	{% if user.getBackendId < 1 %}
+		<div class="alert alert-warning">
+			{{ translate('User is not active') }}
+		</div>
+	{% endif %}
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="card card-default mb-3">
+						<div class="card-header">{{ translate('Details') }}</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover table-condensed">
+									<tr>
+										<td>{{ translate('UserId') }}:</td>
+										<td>{{ user.getId }}</td>
+									</tr>
+									<tr>
+										<td>{{ translate('Username') }}:</td>
+										<td>{{ user.getUsername }}</td>
+									</tr>
+									<tr>
+										<td>{{ translate('BackendId') }}:</td>
+										<td>{{ user.getBackendId }}</td>
+									</tr>
+									<tr>
+										<td>{{ translate('EMail') }}:</td>
+										<td>{{ user.getEmail }}</td>
+									</tr>
+									<tr>
+										<td>{{ translate('Created') }}:</td>
+										<td>{{ dateTimeFormatTime(user.getCreated) }}</td>
+									</tr>
+								</table>
+							</div>
+							{% if isAllowed('PServerAdmin/user_edit') %}
+								<a href="{{ url('PServerAdmin/user_edit', {'usrId' : user.getId}) }}" class="btn btn-danger btn-sm">{{ translate('edit') }}</a>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+                    {{ userPanelRoleWidget(user) }}
+				</div>
+				{% if isAllowed('PServerAdmin/user_block') %}
+					<div class="col-md-6 col-lg-4">
+                        {{ userPanelBlockWidget(user) }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+		<div class="col-sm-12">
+			<div class="row">
+				{{ userPanelWidget(user) }}
+				{% if isAllowed('PServerAdmin/user_helper') %}
+					<div class="col-md-6 col-lg-4">
+						<div class="card card-default mb-3">
+							<div class="card-header">{{ translate('Helper') }}</div>
+							<div class="card-body">
+                                {% if isAllowed('PServerAdmin/user_helper', 'login_with') %}
+									<a href="{{ url('PServerAdmin/user_helper', {'action':'login-with', 'usrId':user.getId}) }}" class="btn btn-warning">
+                                        {{ translate('Login with') }}
+									</a>
+                                {% endif %}
+								<a href="{{ url('PServerAdmin/user', {'usrId':user.getId}) }}" class="btn btn-warning">
+									{{ translate('like search') }}
+								</a>
+								{% if user.getBackendId < 1 and isAllowed('PServerAdmin/user_helper', 'resend-register') %}
+									<a href="{{ url('PServerAdmin/user_helper', {'action':'resend-register', 'usrId':user.getId}) }}" class="btn btn-warning">
+										{{ translate('Resend Register') }}
+									</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endblock content %}

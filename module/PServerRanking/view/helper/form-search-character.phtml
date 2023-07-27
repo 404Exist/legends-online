@@ -1,0 +1,18 @@
+<?php
+/** @var \Laminas\Form\Form $form */
+$form = $this->formWidget;
+$form->prepare();
+$form->setAttribute('method', 'get');
+?>
+
+<?= $this->form()->openTag($form) ?>
+<div class="input-group mb-3">
+    <div class="input-group-append">
+        <?= $this->formSelect($form->get('type')) . $this->pserverformerrors($form->get('type')) ?>
+    </div>
+    <?= $this->formInput($form->get('search')) . $this->pserverformerrors($form->get('search')) ?>
+    <div class="input-group-append">
+        <?= $this->formButton($form->get('submit')) ?>
+    </div>
+</div>
+<?= $this->form()->closeTag() ?>

@@ -1,0 +1,9 @@
+<?php include '_salutation.phtml' ?>
+
+<?= sprintf(
+    $this->translate('Please confirm your email by clicking on the following link.<br /><br />%s'),
+    '<a href="' . $this->url('small-user-auth', ['action' => 'add-email', 'code' => $this->code], ['force_canonical' => true]) . '">
+        ' . $this->url('small-user-auth', ['action' => 'add-email', 'code' => $this->code], ['force_canonical' => true])
+    . '</a>'
+)
+?>

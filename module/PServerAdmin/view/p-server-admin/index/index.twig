@@ -1,0 +1,21 @@
+{% extends 'layout/admin' %}
+
+{% block content %}
+	{% for update in updateList %}
+		<div class="mb-10">
+			<h3>
+				{{ update['headline'] }}
+			</h3>
+			<div class="mb-10">
+				released this on {{ update['datetime'] }}
+			</div>
+			<div class="blog-content-image">{{ parsedown(update['body']) }}</div>
+		</div>
+		<hr />
+	{% endfor %}
+
+	{% if releaseList %}
+		{{ paginationControl(releaseList, 'Sliding', 'p-server-core/paginator', {'route' : 'PServerAdmin/home'}) }}
+	{% endif %}
+
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+	{{ translate('Guild - %s')|format(guild.getName()) }}
+{% endblock title %}
+
+{% block content %}
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tr>
+				<th>{{ translate('Guild') }}</th>
+				<th>{{ guild.getName() }}</th>
+			</tr>
+			<tr>
+				<th>{{ translate('Level') }}</th>
+				<th>{{ guild.getLevel() }}</th>
+			</tr>
+			{% if (guild.getItemPoints() != null) %}
+				<tr>
+					<th>{{ translate('ItemPoints') }}</th>
+					<th>{{ guild.getItemPoints() }}</th>
+				</tr>
+			{% endif %}
+			<tr>
+				<th>{{ translate('Member') }}</th>
+				<th>{{ member.getTotalItemCount() }}</th>
+			</tr>
+		</table>
+	</div>
+
+	<h2>{{ translate('Member') }}</h2>
+
+	<div id="pServerCMSGuildMember">
+		{% include 'p-server-ranking/guild/member' %}
+	</div>
+
+{% endblock content %}

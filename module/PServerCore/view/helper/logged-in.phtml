@@ -1,0 +1,17 @@
+<div class="margin-bottom-15">
+    <h3><?= $this->escapeHtml($this->user->getUsername()) ?></h3>
+    <hr/>
+    <?php if ($this->isAllowed('PServerCore/coins')) : ?>
+        <span id="coinsWidgetSidebar">
+            <?= $this->coinsInfoWidgetPServerCore() ?>
+        </span> <i class="fa-sync fas coins-widget-reload" data-url="<?= $this->url('PServerCore/coins', ['action' => 'reload-widget']); ?>"></i>
+        <hr/>
+    <?php endif; ?>
+    <div class="sidebar-nav">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                <?= $this->navigationWidgetPServerCore()->menu()->setPartial('p-server-core/account-navigation') ?>
+            </div>
+        </div>
+    </div>
+</div>

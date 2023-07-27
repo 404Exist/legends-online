@@ -1,0 +1,24 @@
+<div class="card card-default mb-3">
+    <div class="card-header"><?= $this->translate('CharacterList') ?></div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <th>#</th>
+                    <th><?= $this->translate('CharacterName') ?></th>
+                    <th><?= $this->translate('Guild') ?></th>
+                    <th><?= $this->translate('Level') ?></th>
+                </tr>
+                <?php /** @var \GameBackend\Entity\Game\CharacterInterface $character */ ?>
+                <?php foreach ($this->characterList as $key => $character) : ?>
+                <tr>
+                    <td><?= $character->getId() ?></td>
+                    <td><?= $this->escapeHtml($character->getName()) ?></td>
+                    <td><?= $character->getGuild() ? $this->escapeHtml($character->getGuild()->getName()) : '' ?></td>
+                    <td><?= $this->escapeHtml($character->getLevel()) ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+    </div>
+</div>

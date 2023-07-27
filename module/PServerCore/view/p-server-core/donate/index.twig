@@ -1,0 +1,60 @@
+{% extends 'layout/layout' %}
+
+{% block content %}
+	<!-- past your iframe in this template, please use "{{ '{{ user.getId() }}' }}" to get the userId, for the payment-interface -->
+
+	{{ viewHelperExists('donateBonusWidget') ? donateBonusWidget() : ''  }}
+
+	{% if paygoPackage %}
+		<h1>Payop</h1>
+		<form action="{{ url('PServerCore/panel_donate', {'action':'payop'}) }}" method="post">
+			<label>{{ translate('Package selection') }}</label>
+			<select class="form-control" name="payop">
+				{% for key, package in paygoPackage %}
+					<option value="{{ key }}">{{ package['name'] }}</option>
+				{% endfor %}
+			</select>
+
+			<input class="btn btn-md btn-warning" type="submit" value="Submit"/>
+		</form>
+	{% endif %}
+	{% if unitpayPackage %}
+		<h1>unitPay</h1>
+		<form action="{{ url('PServerCore/panel_donate', {'action':'unitpay'}) }}" method="post">
+			<label>{{ translate('Package selection') }}</label>
+			<select class="form-control" name="unitpay">
+				{% for key, package in unitpayPackage %}
+					<option value="{{ key }}">{{ package['name'] }}</option>
+				{% endfor %}
+			</select>
+
+			<input class="btn btn-md btn-warning" type="submit" value="Submit"/>
+		</form>
+	{% endif %}
+	{% if centAppPackage %}
+		<h1>CentApp</h1>
+		<form action="{{ url('PServerCore/panel_donate', {'action':'centapp'}) }}" method="post">
+			<label>{{ translate('Package selection') }}</label>
+			<select class="form-control" name="centapp">
+				{% for key, package in centAppPackage %}
+					<option value="{{ key }}">{{ package['name'] }}</option>
+				{% endfor %}
+			</select>
+
+			<input class="btn btn-md btn-warning" type="submit" value="Submit"/>
+		</form>
+	{% endif %}
+	{% if stripePackage %}
+		<h1>Stripe</h1>
+		<form action="{{ url('PServerCore/panel_donate', {'action':'stripe'}) }}" method="post">
+			<label>{{ translate('Package selection') }}</label>
+			<select class="form-control" name="stripe">
+				{% for key, package in stripePackage %}
+					<option value="{{ key }}">{{ package['name'] }}</option>
+				{% endfor %}
+			</select>
+
+			<input class="btn btn-md btn-warning" type="submit" value="Submit"/>
+		</form>
+	{% endif %}
+{% endblock content %}

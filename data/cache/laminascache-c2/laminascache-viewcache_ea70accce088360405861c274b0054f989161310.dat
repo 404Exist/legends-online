@@ -1,0 +1,147 @@
+s:7038:"    <div class="block topranks">
+        <div class="blockTitle">
+            <p>TOP PLAYERS</p>
+            <!--<span>The best players of our project!</span>-->
+        </div>
+        <div class="tableBlock table-top">
+            <div class="tableBlock-thead">
+                <div class="tableBlock-tr">
+                    <div class="tableBlock-td td-25">
+                        #
+                    </div>
+                    <div class="tableBlock-td td-50">
+                        Players
+                    </div>
+                    <div class="tableBlock-td td-25">
+                        Points <span class="plvl">LV</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tableBlock-body">
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            1.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-353.html">
+                                SPEAR                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            500 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            2.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-354.html">
+                                WAR                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            3.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-355.html">
+                                Siska                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            4.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-356.html">
+                                ERYYY                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            5.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-357.html">
+                                Goosxc                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            6.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-358.html">
+                                Sleepy                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            7.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-359.html">
+                                Jewbacka                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">40</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            8.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-360.html">
+                                Baron                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            9.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-361.html">
+                                WARWAR                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                                    <div class="tableBlock-tr text-td">
+                        <div class="tableBlock-td td-25">
+                            10.
+                        </div>
+                        <div class="tableBlock-td td-50">
+                            <a href="/ranking/character-363.html">
+                                Kukold                            </a>
+                        </div>
+                        <div class="tableBlock-td td-25">
+                            0 <span class="plvl">100</span>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+        <div class="more-top">
+            <a href="/ranking.html" class="button button-medium">more</a>
+        </div>
+    </div><!--block-->
+";

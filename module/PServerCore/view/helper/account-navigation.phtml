@@ -1,0 +1,34 @@
+<?php
+/* @var $container Laminas\Navigation\Navigation */
+$container = $this->container;
+$accountPage = $container->findOneBy('id', 'account');
+if ($accountPage):
+    ?>
+    <div class="nav nav-pills flex-column">
+        <?php
+        /** @var \Laminas\Navigation\Page\AbstractPage $page */
+        foreach ($accountPage as $page): ?>
+            <?php if (!$this->navigation()->accept($page, false)) {
+                continue;
+            }
+            ?>
+            <a class="nav-link <?= $page->getClass() ?> <?= $page->isActive(true) ? 'active' : '' ?>"
+               href="<?= $page->getHref() ?>"
+                <?php if (null !== $page->getTarget()): ?>
+                    target="<?= $page->getTarget(); ?>"
+                <?php endif; ?>
+            >
+                <?php if (isset($page->icon)) : ?>
+                    <i class="<?= $page->get('icon') ?>"></i>
+                <?php endif; ?>
+                <?= $this->escapeHtml(
+                    $this->translate(
+                        $page->getLabel(),
+                        $this->navigation($container)->getTranslatorTextDomain()
+                    )
+                );
+                ?>
+            </a>
+        <?php endforeach ?>
+    </div>
+<?php endif; ?>

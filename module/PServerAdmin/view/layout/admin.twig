@@ -1,0 +1,185 @@
+{{ doctype() }}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+        {{ navigationWidgetPServerCore().menu('Laminas\\Navigation\\PServerAdmin').getContainer().findAllBy('active', true)|last.getLabel }}{% block title %}{% endblock title %} >> {{ translate('PServerAdmin') }}
+	</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	{% block meta %}{% endblock meta %}
+
+    {{ headLink({'rel' : 'icon', 'type' : 'image/x-icon', 'href' : 'data:image/png;base64,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'}, 'PREPEND')
+		.appendStylesheet(
+			'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+			'screen',
+			true,
+			{
+				'crossorigin' : 'anonymous',
+				'integrity' : 'sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO'
+			}
+		)
+		.appendStylesheet(
+			'https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.min.css',
+			'screen',
+			true,
+			{'crossorigin' : 'anonymous'}
+		)
+		.appendStylesheet(
+			'https://use.fontawesome.com/releases/v5.5.0/css/all.css',
+			'screen',
+			true,
+			{
+				'crossorigin' : 'anonymous',
+                'integrity' : 'sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
+			}
+		)
+		.appendStylesheet(
+			basePath('/assets/admin/css/sb-admin-2.min.css'),
+			'screen'
+		)|raw
+    }}
+
+	<style>
+		.sceditor-group *,.sceditor-group *:before,.sceditor-group *:after {
+			-moz-box-sizing: content-box;
+			-webkit-box-sizing: content-box;
+			box-sizing: content-box;
+		}
+		.sceditor-container textarea {
+			height: 150px;
+		}
+	</style>
+	{% block style %}{% endblock style %}
+
+</head>
+<body id="page-top">
+	<nav class="navbar navbar-expand navbar-light bg-light static-top">
+
+		{% if isAllowed('PServerAdmin/home') %}
+			<a class="navbar-brand mr-1" href="{{ url('PServerAdmin/home') }}">{{ translate('PServerAdmin') }}</a>
+		{% endif %}
+
+		<button class="btn btn-link btn-sm order-1 order-sm-0" id="sidebarToggle" href="#">
+			<i class="fas fa-bars"></i>
+		</button>
+
+		<!-- Navbar Search -->
+		<div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+
+		</div>
+
+		<!-- Navbar -->
+
+		<ul class="navbar-nav ml-auto ml-md-0">
+			<li class="nav-item no-arrow mx-1">
+				<a class="nav-link" href="{{ url('PServerCore') }}"><i class="fas fa-desktop"></i></a>
+			</li>
+			{% if isAllowed('PServerAdmin/donate') %}
+				<li class="nav-item no-arrow mx-1 d-none d-md-inline d-lg-inline d-xl-inline">
+					<a class="nav-link" href="{{ url('PServerAdmin/donate') }}"><i class="fas fa-donate" title="{{ translate('Donations') }}"></i> <span class="badge badge-danger">{{ donateCounter() }}</span></a>
+				</li>
+				<li class="nav-item no-arrow mx-1 d-none d-md-inline d-lg-inline d-xl-inline">
+					<a class="nav-link" href="{{ url('PServerAdmin/donate') }}"><i class="fas fa-dollar-sign" title="{{ translate('Total Donations') }}"></i> <span class="badge badge-danger">{{ donateSum() }}</span></a>
+				</li>
+			{% endif %}
+			{% if isAllowed('zfc-ticketsystem-admin') %}
+				<li class="nav-item no-arrow mx-1 d-none d-md-inline d-lg-inline d-xl-inline">
+					<a class="nav-link" href="{{ url('zfc-ticketsystem-admin', {'type': '0'}) }}"><i class="fas fa-tasks" title="{{ translate('New Tickets') }}"></i> <span class="badge badge-danger">{{ numberOfNewTickets() }}</span></a>
+				</li>
+			{% endif %}
+			{% if isAllowed('small-user-auth','logout') %}
+				<li class="nav-item dropdown no-arrow">
+					<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-user-circle fa-fw"></i>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right user-dropdown" aria-labelledby="userDropdown">
+						<a class="dropdown-item" href="{{ url('PServerCore') }}"><i class="fas fa-cog fa-fw"></i> {{ translate('Page') }}</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="{{ url('small-user-auth',{'action':'logout'}) }}"><i class="fas fa-sign-out-alt fa-fw"></i> {{ translate('Logout') }}</a>
+					</div>
+					<!-- /.dropdown-user -->
+				</li>
+			{% endif %}
+		</ul>
+	</nav>
+	<div id="wrapper">
+		<!-- Sidebar -->
+		<ul class="sidebar navbar-nav">
+			{{ navigationWidgetPServerCore().menu('Laminas\\Navigation\\PServerAdmin').setPartial('p-server-admin/navigation')|raw }}
+		</ul>
+		<div id="content-wrapper">
+
+			<div class="container-fluid">
+				<!-- Charts Start -->
+				<div class="page-head">
+					<h4 class="my-2 bd-title">{{ navigationWidgetPServerCore().findAllBy('active', true)|last.getLabel }}{{ block('title') }}</h4>
+					<small class="pull-right">{{ navigationWidgetPServerCore().breadcrumbs().setMinDepth(0).setRenderInvisible(true).setSeparator(' / ')|raw }}</small>
+					<span class="clearfix"></span>
+				</div>
+				<hr>
+				{% block content %}{{ content|raw }}{% endblock content %}
+			</div>
+			<footer class="sticky-footer">
+				<div class="container my-auto">
+					<div class="copyright text-center my-auto">
+						<span style="font-size: 15px;">
+							&copy; {{ "NOW"|date('Y') }} <b>PServerCMS</b> |
+							<a href="https://github.com/kokspflanze/PServerCMS" target="_blank">
+								<i class="fab fa-github black"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- Scroll to Top Button-->
+		<a class="scroll-to-top rounded" href="#page-top" style="display: inline;">
+			<i class="fas fa-angle-up"></i>
+		</a>
+	</div>
+
+
+    {{ headScript()
+		.prependFile(
+			'https://code.jquery.com/jquery-3.5.1.min.js',
+			'text/javascript',
+			{'crossorigin' : 'anonymous'}
+		)
+		.appendFile(
+			'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+			'text/javascript',
+			{
+				'crossorigin' : 'anonymous',
+				'integrity' : 'sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49',
+			}
+		)
+		.appendFile(
+			'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+			'text/javascript',
+			{
+				'crossorigin' : 'anonymous',
+				'integrity' : 'sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy',
+			}
+		)
+		.appendFile(
+			'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js',
+			'text/javascript',
+			{'crossorigin' : 'anonymous'}
+		)
+		.appendFile(
+			basePath('/assets/admin/js/sb-admin-2.min.js')
+		)
+		.appendFile(
+			basePath('/js/function.js')
+		)|raw
+    }}
+	<!-- Scripts -->
+	{% block script %}{% endblock script %}
+	<script>
+		jQuery('.datepicker').datepicker({
+			'dateFormat' : 'yy-mm-dd'
+		});
+	</script>
+</body>
+</html>

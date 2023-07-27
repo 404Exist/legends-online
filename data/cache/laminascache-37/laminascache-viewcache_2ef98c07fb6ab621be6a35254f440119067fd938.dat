@@ -1,0 +1,451 @@
+s:20862:"
+<h2>Inventory</h2>
+<div class="table-responsive">
+    <table class="table table-borderless table-inventory mx-auto">
+                    <tr>                                    <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/weapon/spear_10.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Poison Horn Spear [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Spear<br />
+                            Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. atk. pwr. 1941 ~ 2215 (+80%)<br />
+                    Mag. atk. pwr. 3341 ~ 3889 (+80%)<br />
+                    Durability 74/208 (+0%)<br />
+                    Attack rating 348 (+80%)<br />
+                    Critical 13 (+75%)<br />
+                    Phy. reinforce 226.7 % ~ 269.8 % (+80%)<br />
+                    Mag. reinforce 388.6 % ~ 474.9 % (+80%)<br />
+                <br />
+                Reqiure level 90<br />
+                        Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">Durability 160% Increase</b><br />
+                        <b style="color: #50cecd">Attack rate 60% Increase</b><br />
+                        <b style="color: #50cecd">Blocking ratio 100 Increase</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                                                                                        <td>
+                        <div class="sro-item-detail">
+                            <div class="item"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </td>
+                            </tr>                        <tr>                                    <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/man_item/heavy_10_ha.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Black Casque [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Armor<br />
+        Mounting part: Head<br />                    Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. def. pwr. 261.4 (+80%)<br />
+                    Mag. def. pwr. 341.1 (+80%)<br />
+                    Durability 66/285 (+80%)<br />
+                    Parry rate 63 (+80%)<br />
+                    Phy. reinforce 30.86 (+80%)<br />
+                    Mag. reinforce 40.48 (+80%)<br />
+                <br />
+                Reqiure level 91<br />
+                    Male<br />
+                    Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">Durability 160% Increase</b><br />
+                        <b style="color: #50cecd">Parry rate 60% Increase</b><br />
+                        <b style="color: #50cecd">HP 850 Increase</b><br />
+                        <b style="color: #50cecd">MP 850 Increase</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                                                                                        <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/man_item/heavy_10_sa.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Black Shoulder [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Armor<br />
+        Mounting part: Shoulder<br />                    Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. def. pwr. 208.6 (+80%)<br />
+                    Mag. def. pwr. 272.9 (+80%)<br />
+                    Durability 71/283 (+80%)<br />
+                    Parry rate 52 (+80%)<br />
+                    Phy. reinforce 24.92 (+80%)<br />
+                    Mag. reinforce 32.64 (+80%)<br />
+                <br />
+                Reqiure level 90<br />
+                    Male<br />
+                    Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">Durability 160% Increase</b><br />
+                        <b style="color: #50cecd">Parry rate 60% Increase</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                            </tr>                        <tr>                                    <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/man_item/heavy_10_ba.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Black Armor [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Armor<br />
+        Mounting part: Chest<br />                    Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. def. pwr. 346.8 (+80%)<br />
+                    Mag. def. pwr. 454.6 (+80%)<br />
+                    Durability 69/286 (+80%)<br />
+                    Parry rate 80 (+80%)<br />
+                    Phy. reinforce 40.78 (+80%)<br />
+                    Mag. reinforce 53.38 (+80%)<br />
+                <br />
+                Reqiure level 92<br />
+                    Male<br />
+                    Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">Durability 160% Increase</b><br />
+                        <b style="color: #50cecd">Parry rate 60% Increase</b><br />
+                        <b style="color: #50cecd">HP 850 Increase</b><br />
+                        <b style="color: #50cecd">MP 850 Increase</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                                                                                        <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/man_item/heavy_10_aa.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Black Bracer [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Armor<br />
+        Mounting part: Hands<br />                    Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. def. pwr. 194 (+80%)<br />
+                    Mag. def. pwr. 253.6 (+80%)<br />
+                    Durability 79/283 (+80%)<br />
+                    Parry rate 50 (+80%)<br />
+                    Phy. reinforce 23.12 (+80%)<br />
+                    Mag. reinforce 30.36 (+80%)<br />
+                <br />
+                Reqiure level 90<br />
+                    Male<br />
+                    Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">Durability 160% Increase</b><br />
+                        <b style="color: #50cecd">Parry rate 60% Increase</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                            </tr>                        <tr>                                    <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/man_item/heavy_10_la.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Black Hose [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Armor<br />
+        Mounting part: Legs<br />                    Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. def. pwr. 284.7 (+80%)<br />
+                    Mag. def. pwr. 372.1 (+80%)<br />
+                    Durability 83/286 (+80%)<br />
+                    Parry rate 67 (+80%)<br />
+                    Phy. reinforce 33.34 (+80%)<br />
+                    Mag. reinforce 43.66 (+80%)<br />
+                <br />
+                Reqiure level 92<br />
+                    Male<br />
+                    Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">Durability 160% Increase</b><br />
+                        <b style="color: #50cecd">Parry rate 60% Increase</b><br />
+                        <b style="color: #50cecd">HP 850 Increase</b><br />
+                        <b style="color: #50cecd">MP 850 Increase</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                                                                                        <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/man_item/heavy_10_fa.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Black Footgear [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Armor<br />
+        Mounting part: Foot<br />                    Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. def. pwr. 245.3 (+80%)<br />
+                    Mag. def. pwr. 321.5 (+80%)<br />
+                    Durability 80/285 (+80%)<br />
+                    Parry rate 60 (+80%)<br />
+                    Phy. reinforce 29.08 (+80%)<br />
+                    Mag. reinforce 38.1 (+80%)<br />
+                <br />
+                Reqiure level 91<br />
+                    Male<br />
+                    Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">Durability 160% Increase</b><br />
+                        <b style="color: #50cecd">Parry rate 60% Increase</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                            </tr>                        <tr>                                    <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/acc/earring_10.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Tigers Eye Earring [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Earrings<br />
+                            Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. absorption 27.6 (+80%)<br />
+                    Mag. absorption 27.6 (+80%)<br />
+                <br />
+                Reqiure level 91<br />
+                        Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">BurnHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">Electric shockHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">FrostHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">PosioningHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">ZombieHour 20% Reduce</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                                                                                        <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/acc/necklace_10.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Tigers Eye Necklace [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Necklace<br />
+                            Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. absorption 32.3 (+80%)<br />
+                    Mag. absorption 32.3 (+80%)<br />
+                <br />
+                Reqiure level 92<br />
+                        Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">BurnHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">Electric shockHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">FrostHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">PosioningHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">ZombieHour 20% Reduce</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                            </tr>                        <tr>                                    <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/acc/ring_10.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Tigers Eye Ring [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Ring<br />
+                            Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. absorption 25.2 (+80%)<br />
+                    Mag. absorption 25.2 (+80%)<br />
+                <br />
+                Reqiure level 90<br />
+                        Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">BurnHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">Electric shockHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">FrostHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">PosioningHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">ZombieHour 20% Reduce</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                                                                                        <td><div class="sro-item-detail sro-item-special">
+    <div class="item" data-itemInfo="1">
+            <img alt="" class="sro-item-special-seal" src="/images/seal.gif" />
+            <img alt="" src="/sro/item/china/acc/ring_10.jpg">
+            </div>
+            <div class="info">    <span style="color:#f2e43d;font-weight: bold;">
+        Tigers Eye Ring [+10]    </span>
+<br />
+<br />
+    <b style="color:#f2e43d;">Seal of Star</b><br />    <span style="color:#efdaa4;">
+        Sort of item: Ring<br />
+                            Degree: 10 degrees<br />
+            </span>
+    <br />
+                Phy. absorption 25.2 (+80%)<br />
+                    Mag. absorption 25.2 (+80%)<br />
+                <br />
+                Reqiure level 90<br />
+                        Chinese<br />
+        
+            <br />
+        <span style="color:#efdaa4;">Max. no. of magic options: 9 Unit</span>
+        <br />
+    
+            <br />
+                    <b style="color: #50cecd">Str 6 Increase</b><br />
+                        <b style="color: #50cecd">Int 6 Increase</b><br />
+                        <b style="color: #50cecd">BurnHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">Electric shockHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">FrostHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">PosioningHour 20% Reduce</b><br />
+                        <b style="color: #50cecd">ZombieHour 20% Reduce</b><br />
+            
+            <br />
+
+                    Able to use Advanced elixir.            </div>
+        <div class="clearfix"></div>
+</div></td>
+                            </tr>                </table>
+</div>";

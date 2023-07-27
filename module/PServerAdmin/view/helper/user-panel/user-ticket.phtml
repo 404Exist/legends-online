@@ -1,0 +1,29 @@
+<div class="card card-default mb-3">
+    <div class="card-header"><?= $this->translate('TicketList') ?> <small><?= $this->translate('last') ?> <?= $this->numberOfEntries ?></small></div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <th><?= $this->translate('Subject') ?></th>
+                    <th><?= $this->translate('Typ') ?></th>
+                    <th><?= $this->translate('Category') ?></th>
+                    <th><?= $this->translate('LastEdit') ?></th>
+                </tr>
+                <?php $typeList = [0 => 'new', 1 => 'open', 2 => 'closed'] ?>
+                <?php /** @var \ZfcTicketSystem\Entity\TicketSubject $ticketSubject */ ?>
+                <?php foreach ($this->ticketList as $key => $ticketSubject) : ?>
+                <tr>
+                    <td>
+                        <a href="<?= $this->url('zfc-ticketsystem-admin', ['id' => $ticketSubject->getId(), 'action' => 'view']) ?>">
+                            <?= $this->escapeHtml($ticketSubject->getSubject()) ?>
+                        </a>
+                    </td>
+                    <td><?= $typeList[$ticketSubject->getType()] ?></td>
+                    <td><?= $this->escapeHtml($ticketSubject->getTicketCategory()->getSubject()) ?></td>
+                    <td><?= $this->dateTimeFormatTime($ticketSubject->getLastEdit()) ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+    </div>
+</div>

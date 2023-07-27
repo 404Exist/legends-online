@@ -1,0 +1,19 @@
+<?php
+    /** @var \SROItemDetails\Entity\Shard\Item $item */
+    $item = $this->item;
+?>
+<div class="sro-item-detail <?= $item->getRefItem()->getRarity() ? 'sro-item-special' : '' ?>">
+    <div class="item" data-itemInfo="1">
+    <?php if ($item->getRefItem()->getRarity()) : ?>
+        <img alt="" class="sro-item-special-seal" src="<?= $this->basePath('/images/seal.gif') ?>" />
+    <?php endif; ?>
+        <img alt="" src="<?= $this->basePath(strtolower($item->getRefItem()->getIconPath())) ?>">
+        <?php if ($item->getRefItem()->getItemDetail()->getMaxStack() > 1) : ?>
+            <span class="amount"><?= $item->getData() ?></span>
+        <?php endif; ?>
+    </div>
+    <?php if ($item) : ?>
+        <div class="info"><?= $this->sroItemDetailsBluesWhites($item) ?></div>
+    <?php endif; ?>
+    <div class="clearfix"></div>
+</div>

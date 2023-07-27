@@ -1,0 +1,138 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+    {{ translate('Alliance - %s')|format(alliance.getMasterGuild.getName()) }}
+{% endblock title %}
+
+{% block content %}
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tr>
+                <th>{{ translate('Master Guild') }}</th>
+                <th><a href="{{ url('PServerRanking/guild', {'id':alliance.getMasterGuild.getId()}) }}">{{ alliance.getMasterGuild.getName() }}</a></th>
+            </tr>
+            <tr>
+                <th>{{ translate('Master Leader') }}</th>
+                <th>
+                    {% for member in alliance.getMasterGuild.getMemberList %}
+                        {% if member.getMemberClass == 0 %}
+                            <a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </th>
+            </tr>
+        </table>
+    </div>
+    <h2> {{ translate('Member') }}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>{{ translate('Guild') }}</th>
+                <th>{{ translate('Leader') }}</th>
+                <th>{{ translate('Members') }}</th>
+                <th>{{ translate('Level') }}</th>
+            </tr>
+            </thead>
+            {% if alliance.guild2 and alliance.guild2.getMemberList|length > 0 %}
+                <tr>
+                    <th><a href="{{ url('PServerRanking/guild', {'id':alliance.guild2.getId()}) }}">{{ alliance.guild2.getName() }}</a></th>
+                    <th>
+                    {% for member in alliance.guild2.getMemberList %}
+                        {% if member.getMemberClass == 0 %}
+                            <a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a>
+                        {% endif %}
+                    {% endfor %}
+                    </th>
+                    <th>{{ alliance.guild2.getMemberList|length }}</th>
+                    <th>{{ alliance.guild2.getLevel }}</th>
+                </tr>
+            {% endif %}
+            {% if alliance.guild3 and alliance.guild3.getMemberList|length > 0 %}
+                <tr>
+                    <th><a href="{{ url('PServerRanking/guild', {'id':alliance.guild3.getId()}) }}">{{ alliance.guild3.getName() }}</a></th>
+                    <th>
+                        {% for member in alliance.guild3.getMemberList %}
+                            {% if member.getMemberClass == 0 %}
+                                <a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </th>
+                    <th>{{ alliance.guild3.getMemberList|length }}</th>
+                    <th>{{ alliance.guild3.getLevel }}</th>
+                </tr>
+            {% endif %}
+            {% if alliance.guild4 and alliance.guild4.getMemberList|length > 0 %}
+                <tr>
+                    <th><a href="{{ url('PServerRanking/guild', {'id':alliance.guild4.getId()}) }}">{{ alliance.guild4.getName() }}</a></th>
+                    <th>
+                        {% for member in alliance.guild4.getMemberList %}
+                            {% if member.getMemberClass == 0 %}
+                                <a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </th>
+                    <th>{{ alliance.guild4.getMemberList|length }}</th>
+                    <th>{{ alliance.guild4.getLevel }}</th>
+                </tr>
+            {% endif %}
+            {% if alliance.guild5 and alliance.guild5.getMemberList|length > 0 %}
+                <tr>
+                    <th><a href="{{ url('PServerRanking/guild', {'id':alliance.guild5.getId()}) }}">{{ alliance.guild5.getName() }}</a></th>
+                    <th>
+                        {% for member in alliance.guild5.getMemberList %}
+                            {% if member.getMemberClass == 0 %}
+                                <a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </th>
+                    <th>{{ alliance.guild5.getMemberList|length }}</th>
+                    <th>{{ alliance.guild5.getLevel }}</th>
+                </tr>
+            {% endif %}
+            {% if alliance.guild6 and alliance.guild6.getMemberList|length > 0 %}
+                <tr>
+                    <th><a href="{{ url('PServerRanking/guild', {'id':alliance.guild6.getId()}) }}">{{ alliance.guild6.getName() }}</a></th>
+                    <th>
+                        {% for member in alliance.guild6.getMemberList %}
+                            {% if member.getMemberClass == 0 %}
+                                <a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </th>
+                    <th>{{ alliance.guild6.getMemberList|length }}</th>
+                    <th>{{ alliance.guild6.getLevel }}</th>
+                </tr>
+            {% endif %}
+            {% if alliance.guild7 and alliance.guild7.getMemberList|length > 0 %}
+                <tr>
+                    <th><a href="{{ url('PServerRanking/guild', {'id':alliance.guild7.getId()}) }}">{{ alliance.guild7.getName() }}</a></th>
+                    <th>
+                        {% for member in alliance.guild7.getMemberList %}
+                            {% if member.getMemberClass == 0 %}
+                                <a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </th>
+                    <th>{{ alliance.guild7.getMemberList|length }}</th>
+                    <th>{{ alliance.guild7.getLevel }}</th>
+                </tr>
+            {% endif %}
+            {% if alliance.guild8 and alliance.guild8.getMemberList|length > 0 %}
+                <tr>
+                    <th><a href="{{ url('PServerRanking/guild', {'id':alliance.guild8.getId()}) }}">{{ alliance.guild8.getName() }}</a></th>
+                    <th>
+                        {% for member in alliance.guild8.getMemberList %}
+                            {% if member.getMemberClass == 0 %}
+                                <a href="{{ url('PServerRanking/character', {'id':member.getCharacter.getId}) }}">{{ member.getCharacter.getName }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </th>
+                    <th>{{ alliance.guild8.getMemberList|length }}</th>
+                    <th>{{ alliance.guild8.getLevel }}</th>
+                </tr>
+            {% endif %}
+        </table>
+    </div>
+
+{% endblock content %}

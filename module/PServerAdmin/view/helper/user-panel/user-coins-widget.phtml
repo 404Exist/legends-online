@@ -1,0 +1,12 @@
+<div class="card card-default mb-3">
+    <div class="card-header"><?= $this->translate('Coins') ?></div>
+    <div class="card-body">
+        <?php if ($this->user->getBackendId() < 1) : ?>
+            <p><?= $this->translate('User has no backendId') ?></p>
+        <?php else : ?>
+            <p><?= $this->translate('Current Coins') ?> <?= $this->escapeHtml($this->userCoins) ?></p>
+            <?php $this->coinForm->setAttribute('action', $this->url('PServerAdmin/user_coin', ['action' => 'add', 'usrId' => $this->user->getId()])) ?>
+            <?= $this->formWidget($this->coinForm) ?>
+        <?php endif; ?>
+    </div>
+</div>

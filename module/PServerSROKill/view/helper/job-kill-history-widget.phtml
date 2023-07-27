@@ -1,0 +1,27 @@
+<?php
+if ($this->killHistory) :
+    ?>
+    <div>
+        <h3><?= sprintf($this->translate('Last %s Job Fights'), $this->limit) ?></h3>
+        <hr/>
+        <ul class="list-unstyled">
+            <?php
+            foreach ($this->killHistory as $kill) :
+                ?>
+                <li>
+                    <?= sprintf(
+                        $this->translate('%s has killed %s %s ago'),
+                        '<a href="' . $this->url('PServerRanking/character', ['id' => $kill['CharID']]) . '"><b>' . $this->escapeHtml($kill['CharName16']) . '</b></a>',
+                        '<a href="' . $this->url('PServerRanking/character', ['id' => $kill['DeathCharID']]) . '"><b>' . $this->escapeHtml($kill['DeathCharName16']) . '</b></a>',
+                        $this->agoTimerPServerCore(new \DateTime($kill['created']))
+                    ) ?>
+                </li>
+                <br>
+            <?php
+            endforeach;
+            ?>
+        </ul>
+    </div>
+<?php
+endif;
+?>

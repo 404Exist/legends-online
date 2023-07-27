@@ -1,0 +1,16 @@
+<h2><?= $this->translate('Inventory') ?></h2>
+<div class="table-responsive">
+    <table class="table table-borderless">
+        <?php
+        /** @var \GameBackend\Entity\Game\InventoryInterface $inventorySlot */
+            foreach ($this->inventoryList as $inventorySlot) :
+        ?>
+            <tr>
+                <th><?= $inventorySlot->getItem()->getRefItem()->getLevel() ?></th>
+                <th><?= $this->pServerRankingItemDetails($inventorySlot->getItem()) ?></th>
+            </tr>
+        <?php
+            endforeach;
+        ?>
+    </table>
+</div>

@@ -1,0 +1,45 @@
+{% extends 'layout/layout' %}
+
+{% block content %}
+	<div id="votePage">
+		<iframe id="blubbVotePage" scrolling="no"></iframe>
+	</div>
+	<p id="idVoteTime" class="text-center" style="margin:5px 0;">
+		{{ translate('You can click vote in') }} <span id="voteTimerSwitch" class="text-center"></span>
+	</p>
+{% endblock content %}
+
+{% block script %}
+	<script type="text/javascript">
+		var load = 0;
+		var timerId;
+		jQuery(document).ready(function(){
+			jQuery("#votePage").scrollTop( {{ voteSite.getTop }} )
+					.scrollLeft( {{ voteSite.getLeft }} );
+
+			jQuery('#blubbVotePage').attr('src',"{{ voteSite.getUrl|raw }}").load(function(){
+				load++;
+
+				if(load > 2) {
+					window.location = "{{ url('PServerPanel/vote', {'action':'reward', 'id':voteSite.getId(), 'token':token}) }}";
+				}
+			});
+			timerId = window.setInterval('loadCheck();',250);
+		});
+
+		function loadCheck(){
+			if(!tTimer(iTimeStamp, {{ endTime }}, "voteTimerSwitch")){
+				jQuery('#idVoteTime').empty();
+				load++;
+				clearInterval(timerId);
+			}
+		}
+	</script>
+{% endblock script %}
+
+{% block style %}
+	<style>
+		iframe#blubbVotePage { border: medium none; height: 900px; overflow: hidden; width: 900px; }
+		#votePage { overflow:hidden; height:400px; }
+	</style>
+{% endblock style %}

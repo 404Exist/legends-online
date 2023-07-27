@@ -1,0 +1,70 @@
+<?php
+/* @var $container Laminas\Navigation\Navigation */
+$container = $this->container;
+$i = 0;
+?>
+<?php foreach ($container as $page) : ?>
+    <?php if (!$this->navigation()->accept($page)) {
+        continue;
+    }
+    $hasPages = false;
+
+    if ($page->hasPages()) :
+        foreach ($page->getPages() as $child) :
+            if ($this->navigation()->accept($child)) :
+                $hasPages = true;
+                break;
+            endif;
+        endforeach;
+    endif;
+
+    ?>
+    <li class="nav-item<?= $hasPages ? ' dropdown' : '' ?><?= $page->isActive(true) ? ' active show' : '' ?>">
+        <a class="nav-link<?= $hasPages ? ' dropdown-toggle' : '' ?> <?= $page->getClass() ?><?= $page->isActive(true) ? ' active' : '' ?>"
+           href="<?= $page->getHref() ?>"
+            <?php if (null !== $page->getTarget()): ?>
+                target="<?= $page->getTarget(); ?>"
+            <?php endif; ?>
+            <?php if ($hasPages): ?>
+                id="pagesDropdown<?= $i ?>" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+            <?php endif; ?>
+        >
+            <i class="far fa-circle" aria-hidden="true"></i>
+            <span>
+                <?= $this->escapeHtml(
+                    $this->translate($page->getLabel(),
+                        $this->navigation($container)->getTranslatorTextDomain())
+                );
+                ?>
+            </span>
+        </a>
+        <?php if ($hasPages) : ?>
+            <div class="dropdown-menu<?= $page->isActive(true) ? ' show' : '' ?>" aria-labelledby="pagesDropdown<?= $i ?>">
+                <?php /** @var Laminas\Navigation\Page\AbstractPage $child */ ?>
+                <?php foreach ($page as $child) : ?>
+                    <?php if (!$this->navigation()->accept($child)) {
+                        continue;
+                    } ?>
+                    <?php if ($child->get("separator") === true): ?>
+                        <div class="dropdown-divider"></div>
+                        <?php
+                        continue;
+                    endif;
+                    ?>
+                    <a href="<?= $child->getHref() ?>"
+                       class="dropdown-item <?= $child->getClass() ?><?= $child->isActive(true) ? ' active show' : '' ?>"
+                        <?php if (null !== $child->getTarget()): ?>
+                            target="<?= $child->getTarget(); ?>"
+                        <?php endif; ?> >
+                        <?= $this->escapeHtml(
+                            $this->translate($child->getLabel(),
+                                $this->navigation($container)->getTranslatorTextDomain())
+                        );
+                        ?>
+                    </a>
+                <?php endforeach ?>
+            </div>
+        <?php endif; ?>
+    </li>
+    <?php $i++; ?>
+<?php endforeach ?>

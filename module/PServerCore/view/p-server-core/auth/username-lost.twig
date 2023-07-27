@@ -1,0 +1,11 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+    {{ translate('Lost Username') }}
+{% endblock title %}
+
+{% block content %}
+
+    {{ formWidget(usernameLostForm) }}
+
+{% endblock content %}

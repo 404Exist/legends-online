@@ -1,0 +1,23 @@
+s:2090:"    <div class="block fortress">
+        <div class="blockTitle">
+            <p>Fortress</p>
+            <!--<span>Fortress war</span>-->
+        </div>
+        <div class="discussions-content-top">
+                                            <div class="discussions-content flex-c">
+                        <div class="discussions-icon">
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuODc7gF0AAAI5SURBVDhPpVNfSFNhFL+3OzDpQeqh8E3ywUIwRkIFIgOL8CEKqcAHwagVlRWzf1CxQHLM7E2WFAvFahFLsweLle5ls2YY1WhdTCG9i6Zmjaa7aDJ+3XPave4y37pw7vfnnN/v+53vnE8Qcj5JktbTUhuxmmV9HLPqRyCLxZJcVmeQnn6NdNyL2bEnmPvcgnfPL2s+KUkxJrC2UaifupSawvzMB8QjdpRsEqGMXOKRTH7ZhMlQAwa6T7K6LKaA5BZqpv5Rf+DXmBtyqJMBB21FeN9fZ8xp/SnoRuhRLTzOGiJZNJQQY/pnjIOX0wkTCQHJ5NBtDHQe4hgajVRospRSoLw5xs5d5WuxMPcFUx+f4Zv8CpPhw4j0XWBQ8QYBuyvX4YVnD7zXbf9I6JdKRBhMTjptenwIo30HIIaHIN5sZfDwfZtBQHH+tsoVgvn4PSRiHsxO9GtEaxALtjE4k8lAgAqxod5Q4HdXoNtZhoetO/IVkIrSYglKtBei4wyDC3q8EKurWDaloNtjV8UKwe+vHaYUiIBki3VaGrZqrXw1hgK6I0rBl6tgId5l3DDdwffxYciBvbw34t+HaMCBsK+WTyeCO1e3o/2s1VwJZfQuqyCwXi69iWgcfOCA87gVG4uEvDJyIxHB26cXTUrcTdtMNx/0NTNJtoQqd3FuK8uDRxHoshskOgEp6O3Yj/ZzW3HjRGluK/MzMHWkRpi8dX4nXKetcJ0qx7UjZWixb8aVxi0EzH9M//uc/wJzr6izEbwcCQAAAABJRU5ErkJggg==" />
+                            
+                        </div>
+                        <div class="discussions-info">
+                            <a class="discussions-text"><strong>Hotan</strong></a>
+                            <span class="discussions-text-bt">
+                                                                    <a href="/ranking/guild-50.html">
+                                        <b>Legends</b>
+                                    </a>
+                                                            </span>
+                        </div>
+                    </div>
+                    </div>
+    </div><!--block discussions-->
+";

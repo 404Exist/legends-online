@@ -1,0 +1,131 @@
+{% extends 'layout/admin' %}
+
+
+{% do
+    headScript()
+        .appendFile(
+            'https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js',
+            'text/javascript',
+            {'crossorigin' : 'anonymous'}
+        )
+        .appendFile(
+            'https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.resize.min.js',
+            'text/javascript',
+            {'crossorigin' : 'anonymous'}
+        )
+        .appendFile(
+            'https://cdnjs.cloudflare.com/ajax/libs/flot.tooltip/0.8.5/jquery.flot.tooltip.min.js',
+            'text/javascript',
+            {'crossorigin' : 'anonymous'}
+        )
+%}
+
+{% block title %}
+    {{ translate('UserRegister-Statistic') }}
+{% endblock title %}
+
+{% block content %}
+    <h2>{{ translate('UserRegister') }}</h2>
+    <div id="statChartFlotLineCount" style="width:100%; height:400px"></div>
+{% endblock content %}
+
+{% block script %}
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+            statistic_chart.chartLinesCount();
+        });
+
+        var coloursChart = ["#61ba61", "#009999", "#ff9933", "red", "#ff9933", "#009999"];
+
+        var aDate = [];
+        var amountList = [];
+
+        {% for date, amount in userRegisterList %}
+            {% set saveLoopId = loop.index0 %}
+            amountList.push(["{{ saveLoopId }}", "{{ amount }}"]);
+            aDate[{{ saveLoopId }}] = "{{ date }}";
+        {% endfor %}
+
+        var options = {
+            legend: {
+                position: "sw"
+            },
+            grid: {
+                show: true,
+                aboveData: true,
+                color: "#333",
+                labelMargin: 5,
+                axisMargin: 0,
+                borderWidth: 0,
+                borderColor: null,
+                minBorderMargin: 5,
+                clickable: true,
+                hoverable: true,
+                autoHighlight: true
+            },
+            series: {
+                grow: {
+                    active: false
+                },
+                lines: {
+                    show: true,
+                    fill: false,
+                    lineWidth: 1.5,
+                    steps: false
+                },
+                points: {
+                    show: true,
+                    radius: 3,
+                    symbol: "circle",
+                    fill: true,
+                    fillColor: "#fff"
+                }
+            },
+            yaxis: {
+                font: {
+                    weight: "bold"
+                },
+                color: "#333",
+                tickColor: "rgba(0,0,0,0.05)",
+                tickDecimals: 0
+            },
+            xaxis: {
+                font: {
+                    weight: "bold"
+                },
+                color: "#333",
+                tickColor: "rgba(0,0,0,0.05)",
+                tickDecimals: 0,
+                tickFormatter: function (val, axis) {
+                    return aDate[val];
+                }
+            },
+
+            colors: coloursChart,
+            shadowSize: 1,
+
+            tooltip: true,
+            tooltipOpts: {
+                content: "Date %x | Number of new User %y"
+            }
+        };
+
+
+        // CHARTS SETTINGS
+        // ------------------------------------------------------------------------------------------------ * -->
+        statistic_chart = {
+            chartLinesCount: function () {
+                var elem = jQuery('#statChartFlotLineCount');
+
+                var plot = jQuery.plot(elem, [
+                    {
+                        data: amountList,
+                        lines: {}
+                    }
+                ], options);
+            },
+        };
+
+    </script>
+{% endblock script %}

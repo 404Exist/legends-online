@@ -1,0 +1,28 @@
+<div class="card card-default mb-3">
+    <div class="card-header"><?= $this->translate('DonateHistory') ?> <small><?= $this->translate('last') ?> <?= $this->limit ?></small></div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <th>#</th>
+                    <th><?= $this->translate('Type') ?></th>
+                    <th><?= $this->translate('TransactionId') ?></th>
+                    <th><?= $this->translate('Success') ?></th>
+                    <th><?= $this->translate('Coins') ?></th>
+                    <th><?= $this->translate('Created') ?></th>
+                </tr>
+                <?php /** @var \PServerCore\Entity\DonateLog $donate */ ?>
+                <?php foreach ($this->donateHistoryList as $key => $donate) : ?>
+                <tr>
+                    <td><?= $key + 1 ?></td>
+                    <td><?= $this->escapeHtml($donate->getType()) ?></td>
+                    <td><?= $this->escapeHtml($donate->getTransactionId()) ?></td>
+                    <td><?= $donate->getSuccess() ?></td>
+                    <td><?= $this->escapeHtml($donate->getCoins()) ?></td>
+                    <td><?= $this->dateTimeFormatTime($donate->getCreated()) ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+    </div>
+</div>

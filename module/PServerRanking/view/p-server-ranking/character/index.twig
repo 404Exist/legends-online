@@ -1,0 +1,82 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+	{{ translate('Character - %s')|format(character.getName()) }}
+{% endblock title %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-md-7">
+			<h2>{{ translate('Details') }}</h2>
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<tr>
+						<th>{{ translate('Character') }}</th>
+						<th>{{ character.getName() }}</th>
+					</tr>
+					{% if character.getGuild().getId() > 0 %}
+						<tr>
+							<th>{{ translate('Guild') }}</th>
+							<th><a href="{{ url('PServerRanking/guild', {'id':character.getGuild().getId()}) }}">{{ character.getGuild().getName() }}</a> | {{ translate('Level %s')|format(character.getGuild().getLevel) }}</th>
+						</tr>
+					{% endif %}
+					<tr>
+						<th>{{ translate('Level') }}</th>
+						<th>{{ character.getLevel() }}</th>
+					</tr>
+					<tr>
+						<th>{{ translate('Race') }}</th>
+						<th>{{ translate(character.getRace()) }}</th>
+					</tr>
+					{% if character.getJob() %}
+						<tr>
+							<th>{{ translate('Job') }}</th>
+							<th><img src="data:image/png;base64, {{ jobType2Icon(character.getJob().getJobType()) }}" alt="{{ jobType2Name(character.getJob().getJobType()) }}" /> {{ jobType2Name(character.getJob().getJobType()) }} | {{ translate('Level %s')|format(character.getJob().getLevel) }}</th>
+						</tr>
+					{% endif %}
+					<tr>
+						<th>{{ translate('Strength') }}</th>
+						<th>{{ character.getStrength() }}</th>
+					</tr>
+					<tr>
+						<th>{{ translate('Intellect') }}</th>
+						<th>{{ character.getIntellect() }}</th>
+					</tr>
+					{{ viewHelperExists('pserverSROKillDeath') ? viewCache('pserverSROKillDeath', 360, character.getId()) : '' }}
+					{% if (character.getItemPoints() is not same as(null)) %}
+						<tr>
+							<th>{{ translate('ItemPoints') }}</th>
+							<th>{{ character.getItemPoints() }}</th>
+						</tr>
+					{% endif %}
+					{% if online %}
+						<tr>
+							<th>{{ translate('Status') }}</th>
+							<th>{{ translate('Online') }}</th>
+						</tr>
+					{% else %}
+						<tr>
+							<th>{{ translate('LastLogout') }}</th>
+							<th>{{ dateTimeFormatTime(character.getLastLogout) }}</th>
+						</tr>
+					{% endif %}
+				</table>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div id="display-inventory-set" class="">
+				{{ viewCache('pServerRankingInventoryView', 360, inventory) }}
+			</div>
+			<div id="display-inventory-avatar" class="d-none">
+				{{ viewCache('inventoryAvatarViewSro', 360, character) }}
+			</div>
+			<div class="d-grid">
+				<button id="display-inventory-switch" class="btn btn-primary col-12" data-type="set">{{ translate('Switch') }}</button>
+			</div>
+
+			{{ viewCache('charTimedJobBuffs', 360, character) }}
+		</div>
+	</div>
+
+	{{ viewCache('pServerRankingAdditionalCharacterDetails', 180, character) }}
+{% endblock content %}

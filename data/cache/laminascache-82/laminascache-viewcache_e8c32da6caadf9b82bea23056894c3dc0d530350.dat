@@ -1,0 +1,64 @@
+s:3258:"    <div class="block uniquekills">
+        <div class="blockTitle">
+            <p>UNIQUE HISTORY</p>
+            <!--<span>Last 5 Unique Kills</span>-->
+        </div>
+        <div class="discussions-content-top">
+                            <div class="discussions-content flex-c">
+                    <!--
+                    <div class="discussions-icon">
+                        <img src="/ambition/images/icon_2.jpg" alt="">
+                    </div>
+                    -->
+                    <div class="discussions-info">
+                        <a class="discussions-text">Tiger Girl</a>
+                        <span class="discussions-text-bt">Killed By <a href="/ranking/character-412.html"><b>ykg</b></a> | 19 days ago</span>
+                    </div>
+                </div>
+                            <div class="discussions-content flex-c">
+                    <!--
+                    <div class="discussions-icon">
+                        <img src="/ambition/images/icon_2.jpg" alt="">
+                    </div>
+                    -->
+                    <div class="discussions-info">
+                        <a class="discussions-text">Tiger Girl</a>
+                        <span class="discussions-text-bt">Killed By <a href="/ranking/character-351.html"><b>[GM]Legends</b></a> | 35 days ago</span>
+                    </div>
+                </div>
+                            <div class="discussions-content flex-c">
+                    <!--
+                    <div class="discussions-icon">
+                        <img src="/ambition/images/icon_2.jpg" alt="">
+                    </div>
+                    -->
+                    <div class="discussions-info">
+                        <a class="discussions-text">Captain Ivy</a>
+                        <span class="discussions-text-bt">Killed By <a href="/ranking/character-351.html"><b>[GM]Legends</b></a> | 35 days ago</span>
+                    </div>
+                </div>
+                            <div class="discussions-content flex-c">
+                    <!--
+                    <div class="discussions-icon">
+                        <img src="/ambition/images/icon_2.jpg" alt="">
+                    </div>
+                    -->
+                    <div class="discussions-info">
+                        <a class="discussions-text">Captain Ivy</a>
+                        <span class="discussions-text-bt">Killed By <a href="/ranking/character-351.html"><b>[GM]Legends</b></a> | 51 days ago</span>
+                    </div>
+                </div>
+                            <div class="discussions-content flex-c">
+                    <!--
+                    <div class="discussions-icon">
+                        <img src="/ambition/images/icon_2.jpg" alt="">
+                    </div>
+                    -->
+                    <div class="discussions-info">
+                        <a class="discussions-text">Captain Ivy</a>
+                        <span class="discussions-text-bt">Killed By <a href="/ranking/character-366.html"><b>Slanzer2</b></a> | 58 days ago</span>
+                    </div>
+                </div>
+                    </div>
+    </div><!--block discussions-->
+";

@@ -1,0 +1,45 @@
+<?php
+/** @var \Laminas\Form\Form $form */
+$form = $this->formWidget;
+$form->prepare();
+$form->setAttribute('method', 'post');
+?>
+
+<?= $this->form()->openTag($form) ?>
+<?php foreach ($form as $element): ?>
+    <?php
+    /** @var \Laminas\Form\Element $element */
+    if($element->getAttribute('type') == 'hidden'): ?>
+        <?= $this->formInput($element) . $this->pserverformerrors($element) ?>
+        <?php
+        continue;
+    endif;
+    ?>
+    <div class="mb-3">
+        <?php if ($element instanceof Laminas\Form\Element\Button): ?>
+            <?= $this->formButton($element) ?>
+        <?php elseif ($element instanceof Laminas\Form\Element\Captcha): ?>
+            <?= $this->formCaptcha($element) . $this->pserverformerrors($element) ?>
+        <?php elseif ($element instanceof PServerCore\Form\Element\DateTimeJQuery): ?>
+            <?= $this->formInput($element) . $this->pserverformerrors($element) ?>
+        <?php elseif ($element instanceof Laminas\Form\Element\DateTimeLocal): ?>
+            <?= $this->formDateTimeLocal($element) . $this->pserverformerrors($element) ?>
+        <?php elseif ($element instanceof Laminas\Form\Element\DateTime): ?>
+            <?= $this->formDateTime($element) . $this->pserverformerrors($element) ?>
+        <?php elseif ($element instanceof Laminas\Form\Element\DateTimeLocal): ?>
+            <?= $this->formDateTimeLocal($element) . $this->pserverformerrors($element) ?>
+        <?php elseif ($element instanceof DoctrineModule\Form\Element\ObjectSelect || $element instanceof Laminas\Form\Element\Select): ?>
+            <?= $this->formSelect($element) . $this->pserverformerrors($element) ?>
+        <?php elseif ($element instanceof Laminas\Form\Element\Textarea): ?>
+            <?= $this->formTextarea($element) . $this->pserverformerrors($element) ?>
+        <?php elseif ($element instanceof Laminas\Form\Element\Checkbox): ?>
+            <div class="mb-3 form-check">
+                <?= $this->formCheckbox($element) . $this->pserverformerrors($element) ?>
+                <label class="form-check-label"><?= $this->formLabel($element) ?></label>
+            </div>
+        <?php else: ?>
+            <?= $this->formInput($element) . $this->pserverformerrors($element) ?>
+        <?php endif ?>
+    </div>
+<?php endforeach ?>
+<?= $this->form()->closeTag() ?>

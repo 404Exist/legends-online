@@ -1,0 +1,26 @@
+<div class="card card-default mb-3">
+    <div class="card-header"><?= $this->translate('Roles') ?></div>
+    <div class="card-body">
+        <ul class="list-unstyled">
+            <?php /** @var \PServerCore\Entity\UserRoleInterface $role */ ?>
+            <?php foreach ($this->user->getRoles() as $key => $role) : ?>
+            <li>
+                <?= ucfirst($role->getRoleId()) ?>
+                <?php if ($this->isAllowed('PServerAdmin/user_role')) : ?>
+                    <a href="<?= $this->url('PServerAdmin/user_role', ['action' => 'remove', 'usrId' => $this->user->getId(), 'roleId' => $role->getId()])?>">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                <?php endif; ?>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+        <?php if ($this->isAllowed('PServerAdmin/user_role')) : ?>
+            <?php if ($this->user->getBackendId() > 0) : ?>
+                <?php $this->roleForm->setAttribute('action', $this->url('PServerAdmin/user_role', ['action' => 'add', 'usrId' => $this->user->getId()])) ?>
+                <?= $this->formWidget($this->roleForm) ?>
+            <?php else : ?>
+                <?= $this->translate('not allowed to add roles') ?>
+            <?php endif; ?>
+        <?php endif; ?>
+    </div>
+</div>

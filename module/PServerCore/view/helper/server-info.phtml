@@ -1,0 +1,19 @@
+<div>
+    <h3><?= $this->translate('Server Info') ?></h3>
+    <hr/>
+    <ul class="list-unstyled">
+        <?php if ($this->generalSettingsPServerCore()->getMaxPlayer() > 0) : ?>
+            <li><b><?= $this->translate('Player Online') ?></b> <?= $this->playerHistory(true) ?></li>
+        <?php endif; ?>
+        <?php if((bool)$this->serverInfo): ?>
+            <?php foreach($this->serverInfo as $curInfo): ?>
+                <?php /** @var \PServerCore\Entity\ServerInfo $curInfo */ ?>
+                <li>
+                    <i class="<?= $this->escapeHtml($curInfo->getIcon()) ?>"></i>
+                    <b><?= $this->escapeHtml($curInfo->getLabel()) ?></b>
+                    <?= $this->escapeHtml($curInfo->getMemo()) ?>
+                </li>
+            <?php endforeach ?>
+        <?php endif ?>
+    </ul>
+</div>

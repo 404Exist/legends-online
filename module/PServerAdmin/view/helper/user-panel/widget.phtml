@@ -1,0 +1,21 @@
+<?php foreach ($this->viewHelper as $viewHelper) : ?>
+    <?php if (!isset($viewHelper['route']) || $this->isAllowed($viewHelper['route'])) : ?>
+        <?php
+            $params = [$this->user];
+            if (!empty($viewHelper['params'])) {
+                foreach ($viewHelper['params'] as $param) {
+                    $params[] = $param;
+                }
+            }
+            $widgetData = call_user_func_array([$this, $viewHelper['view-helper']], $params);
+
+            if ($widgetData) :
+                ?>
+                <div class="col-md-6 col-lg-4">
+                    <?= $widgetData ?>
+                </div>
+                <?php
+            endif;
+        ?>
+    <?php endif; ?>
+<?php endforeach; ?>

@@ -1,0 +1,37 @@
+s:1472:"
+<h2>InventoryAvatar</h2>
+<div class="table-responsive">
+    <table class="table table-borderless table-inventory">
+                    <tr>                        <td>
+                <div class="sro-item-detail">
+                    <div class="item"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </td>
+                                                                    <td>
+                <div class="sro-item-detail">
+                    <div class="item"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </td>
+                    </tr>                        <tr>                        <td>
+                <div class="sro-item-detail">
+                    <div class="item"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </td>
+                                                                    <td>
+                <div class="sro-item-detail">
+                    <div class="item"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </td>
+                    </tr>                        <tr>                        <td>
+                <div class="sro-item-detail">
+                    <div class="item"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </td>
+                                    </table>
+</div>
+";

@@ -1,0 +1,22 @@
+{% extends 'layout/layout' %}
+
+{% block content %}
+	{% if downloadList %}
+		<div class="row">
+			{% for key, download in downloadList %}
+				<div class="col-md-3 col-sm-6">
+					<a href="{{ download.getLink }}" target="_blank">
+						<div class="download-box">
+							<p class="download-icon"><i class="fas fa-file-download"></i></p>
+							<p class="hoster">{{ download.getHoster }}</p>
+							<p><span class="btn btn-warning btn-large">{{ translate('Download') }}</span></p>
+						</div>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	{% else %}
+		<p class="text-center">.... {{ translate('uploading') }} ....</p>
+	{% endif %}
+	<div class="clearfix"></div>
+{% endblock content %}

@@ -1,0 +1,35 @@
+{% if character is empty %}
+	{{ translate('There is a problem with this character, please contact the admin.') }}
+{% else %}
+	<h2>{{ translate('Details') }}</h2>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tr>
+				<th>{{ translate('Character') }}</th>
+				<th>{{ character.getName() }}</th>
+			</tr>
+			{% if character.getGuild().getId() > 0 %}
+				<tr>
+					<th>{{ translate('Guild') }}</th>
+					<th><a href="{{ url('PServerRanking/guild', {'id':character.getGuild().getId()}) }}">{{ character.getGuild().getName() }}</a></th>
+				</tr>
+			{% endif %}
+			<tr>
+				<th>{{ translate('Level') }}</th>
+				<th>{{ character.getLevel() }}</th>
+			</tr>
+			<tr>
+				<th>{{ translate('Strength') }}</th>
+				<th>{{ character.getStrength() }}</th>
+			</tr>
+			<tr>
+				<th>{{ translate('Intellect') }}</th>
+				<th>{{ character.getIntellect() }}</th>
+			</tr>
+			<tr>
+				<th>{{ translate('LastLogout') }}</th>
+				<th>{{ dateTimeFormatTime(character.getLastLogout) }}</th>
+			</tr>
+		</table>
+	</div>
+{% endif %}

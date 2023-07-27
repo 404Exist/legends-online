@@ -1,0 +1,9 @@
+<?php
+
+/** @var \Laminas\Form\Form $form */
+$form = $this->form;
+$form->setAttribute('action', $this->url('PServerRanking/search'));
+
+?>
+
+<?= $this->formWidget($form, 'helper/FormSearchCharacterWidget') ?>

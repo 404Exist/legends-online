@@ -1,0 +1,28 @@
+<?php
+if ($this->uniqueKillList) :
+    ?>
+    <h3><?= sprintf($this->translate('Last %s Unique Kills'), $this->limit) ?></h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th><?= $this->translate('Unique Name') ?></th>
+                <th><?= $this->translate('ago') ?></th>
+            </tr>
+            </thead>
+            <?php
+            /** @var \PServerCMS\SROUnique\Shard\Entity\UniqueKillList $uniqueKill */
+            foreach ($this->uniqueKillList as $uniqueKill) :
+            ?>
+            <tr>
+                <td><?= $this->escapeHtml($uniqueKill->getUniqueInfo()->getName()) ?></td>
+                <td><?= $this->agoTimerPServerCore($uniqueKill->getTime()) ?></td>
+            </tr>
+                <?php
+            endforeach;
+            ?>
+        </table>
+    </div>
+    <?php
+endif;
+?>

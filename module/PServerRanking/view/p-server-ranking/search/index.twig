@@ -1,0 +1,23 @@
+{% extends 'layout/layout' %}
+
+{% block content %}
+
+    {{ formWidget(searchForm, 'helper/FormSearchCharacterWidget') }}
+    {% include 'p-server-ranking/search/' ~ type %}
+
+    {% if ranking %}
+        {% set charSearchValue = '' %}
+        {% set charSearchType = '' %}
+        {% if searchForm.hasValidated %}
+            {% set charSearchValue = searchForm.getData['search'] %}
+            {% set charSearchType = searchForm.getData['type'] %}
+        {% endif %}
+
+        {% if charSearchValue|length > 0 %}
+            {{ paginationControl(ranking, 'Sliding', 'p-server-core/paginator', {'route' : 'PServerRanking/search', 'additionalUrl': '?type=' ~ charSearchType ~ '&search=' ~ charSearchValue}) }}
+        {% else %}
+            {{ paginationControl(ranking, 'Sliding', 'p-server-core/paginator', {'route' : 'PServerRanking/search'}) }}
+        {% endif %}
+    {% endif %}
+
+{% endblock content %}

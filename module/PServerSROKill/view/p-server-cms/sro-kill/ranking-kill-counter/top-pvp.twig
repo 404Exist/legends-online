@@ -1,0 +1,40 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+    {{ translate('Ranking - TopPvp KD') }}
+{% endblock title %}
+
+{% block content %}
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>{{ translate('Character') }}</th>
+                <th>{{ translate('Guild') }}</th>
+                <th>{{ translate('K/D') }}</th>
+            </tr>
+            </thead>
+            {% set i = (ranking.getCurrentPageNumber() - 1) * ranking.getDefaultItemCountPerPage() + 1 %}
+            {% for key, rankingEntry in ranking %}
+                <tr>
+                    <td>{{ i }}</td>
+                    <td><a href="{{ url('PServerRanking/character', {'id':rankingEntry['charId']}) }}">{{ rankingEntry['charName'] }}</a></td>
+                    <td>
+                        {% if rankingEntry['guildId'] > 0 %}
+                            <a href="{{ url('PServerRanking/guild', {'id':rankingEntry['guildId']}) }}">{{ rankingEntry['guildName'] }}</a>
+                        {% endif %}
+                    </td>
+                    <td>{{ rankingEntry['kill'] ~ '/' ~ rankingEntry['death'] }}</td>
+                </tr>
+                {% set i = i + 1 %}
+            {% endfor %}
+        </table>
+    </div>
+
+    {% if ranking %}
+        {{ paginationControl(ranking, 'Sliding', 'p-server-core/paginator', {'route' : 'PServerRanking/sro_ranking_kill', 'params': {'action' : 'top-pvp'}}) }}
+    {% endif %}
+
+{% endblock content %}

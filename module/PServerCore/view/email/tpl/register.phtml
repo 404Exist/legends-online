@@ -1,0 +1,10 @@
+<?php include '_salutation.phtml' ?>
+
+<?= $this->translate('Thank you for registration.') ?><br />
+<?= sprintf(
+        $this->translate('Please confirm your account by clicking on the following link.<br /><br />%s<br /><br />Hope you will enjoy the game and good luck!'),
+'<a href="' . $this->url('small-user-auth', ['action' => 'register-confirm', 'code' => $this->code], ['force_canonical' => true]) . '">
+        ' . $this->url('small-user-auth', ['action' => 'register-confirm', 'code' => $this->code], ['force_canonical' => true])
+    . '</a>'
+    )
+?>

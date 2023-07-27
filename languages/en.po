@@ -1,0 +1,2252 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PServerCMS\n"
+"POT-Creation-Date: 2022-02-10 20:47+0100\n"
+"PO-Revision-Date: 2022-02-10 20:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ../module\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: translatePlural:1,2;translate\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: GameBackend/src/Entity/SRO/Shard/Character.php:805
+msgid "China"
+msgstr ""
+
+#: GameBackend/src/Entity/SRO/Shard/Character.php:807
+msgid "Europe"
+msgstr ""
+
+#: PServerAdmin/src/Form/Coin.php:20 PServerAdmin/src/Form/Vote.php:59
+#: PServerAdmin/src/Form/Vote.php:62
+#: PServerAdmin/view/helper/user-panel/user-coins-widget.phtml:2
+#: PServerAdmin/view/helper/user-panel/user-donate-history.phtml:11
+#: PServerCore/view/helper/coins-info-widget.phtml:1
+#: PServerPanel/view/p-server-panel/vote/index.twig:18
+msgid "Coins"
+msgstr ""
+
+#: PServerAdmin/src/Form/Coin.php:30 PServerAdmin/src/Form/UserBlock.php:33
+#: PServerAdmin/view/helper/user-panel/user-block-history.phtml:8
+#: PServerAdmin/view/helper/user-panel/user-block-widget.phtml:6
+msgid "Reason"
+msgstr ""
+
+#: PServerAdmin/src/Form/Coin.php:39
+msgid "Save"
+msgstr ""
+
+#: PServerAdmin/src/Form/Download.php:19 PServerAdmin/src/Form/Download.php:22
+msgid "Hoster"
+msgstr ""
+
+#: PServerAdmin/src/Form/Download.php:29 PServerAdmin/src/Form/Download.php:32
+msgid "Link"
+msgstr ""
+
+#: PServerAdmin/src/Form/Download.php:40 PServerAdmin/src/Form/Download.php:43
+#: PServerAdmin/src/Form/News.php:46 PServerAdmin/src/Form/News.php:49
+#: PServerAdmin/src/Form/PageInfo.php:31 PServerAdmin/src/Form/PageInfo.php:34
+#: PServerAdmin/src/Form/ServerInfo.php:41
+#: PServerAdmin/src/Form/ServerInfo.php:44
+msgid "Memo"
+msgstr ""
+
+#: PServerAdmin/src/Form/Download.php:51 PServerAdmin/src/Form/Download.php:54
+#: PServerAdmin/src/Form/SecretQuestion.php:30
+#: PServerAdmin/src/Form/SecretQuestion.php:33
+#: PServerAdmin/src/Form/ServerInfo.php:52
+#: PServerAdmin/src/Form/ServerInfo.php:55 PServerAdmin/src/Form/Vote.php:119
+#: PServerAdmin/src/Form/Vote.php:122
+msgid "Sortkey"
+msgstr ""
+
+#: PServerAdmin/src/Form/Download.php:64 PServerAdmin/src/Form/Download.php:71
+#: PServerAdmin/src/Form/News.php:90 PServerAdmin/src/Form/News.php:97
+#: PServerAdmin/src/Form/ServerInfo.php:66
+#: PServerAdmin/src/Form/ServerInfo.php:73 PServerAdmin/src/Form/Vote.php:132
+msgid "Active"
+msgstr ""
+
+#: PServerAdmin/src/Form/Download.php:66 PServerAdmin/src/Form/News.php:92
+#: PServerAdmin/src/Form/ServerInfo.php:68 PServerAdmin/src/Form/Vote.php:134
+msgid "deactivate"
+msgstr ""
+
+#: PServerAdmin/src/Form/Download.php:67 PServerAdmin/src/Form/News.php:93
+#: PServerAdmin/src/Form/ServerInfo.php:69 PServerAdmin/src/Form/Vote.php:135
+msgid "active"
+msgstr ""
+
+#: PServerAdmin/src/Form/Download.php:78 PServerAdmin/src/Form/News.php:104
+#: PServerAdmin/src/Form/PageInfo.php:42
+#: PServerAdmin/src/Form/SecretQuestion.php:41
+#: PServerAdmin/src/Form/ServerInfo.php:80 PServerAdmin/src/Form/User.php:54
+#: PServerAdmin/src/Form/UserBlock.php:42 PServerAdmin/src/Form/Vote.php:145
+#: PServerCore/src/Form/AddEmail.php:42 PServerCore/src/Form/ChangeEmail.php:56
+#: PServerCore/src/Form/Password.php:62
+#: PServerPanel/src/Form/Hipopotamya.php:81
+#: PServerPanel/src/Form/Maxigame.php:77
+msgid "Submit"
+msgstr ""
+
+#: PServerAdmin/src/Form/News.php:34 PServerAdmin/src/Form/News.php:37
+#: PServerAdmin/src/Form/PageInfo.php:19 PServerAdmin/src/Form/PageInfo.php:22
+#: PServerAdmin/src/Form/Vote.php:20 PServerAdmin/src/Form/Vote.php:23
+msgid "Title"
+msgstr ""
+
+#: PServerAdmin/src/Form/News.php:59 PServerAdmin/src/Form/News.php:62
+msgid "Release"
+msgstr ""
+
+#: PServerAdmin/src/Form/News.php:74
+msgid "TranslationLocale"
+msgstr ""
+
+#: PServerAdmin/src/Form/SecretQuestion.php:19
+#: PServerAdmin/src/Form/SecretQuestion.php:22
+msgid "Question"
+msgstr ""
+
+#: PServerAdmin/src/Form/ServerInfo.php:19
+#: PServerAdmin/src/Form/ServerInfo.php:22
+msgid "Icon-Class"
+msgstr ""
+
+#: PServerAdmin/src/Form/ServerInfo.php:30
+#: PServerAdmin/src/Form/ServerInfo.php:33
+msgid "Label"
+msgstr ""
+
+#: PServerAdmin/src/Form/User.php:19 PServerAdmin/src/Form/User.php:22
+#: PServerCore/src/Form/AddEmail.php:19 PServerCore/src/Form/AddEmail.php:22
+#: PServerCore/src/Form/ChangeEmail.php:33
+#: PServerCore/src/Form/ChangeEmail.php:36 PServerCore/src/Form/Register.php:60
+#: PServerCore/src/Form/Register.php:63
+#: PServerPanel/src/Form/ResendRegister.php:34
+#: PServerPanel/src/Form/ResendRegister.php:37
+msgid "Email"
+msgstr ""
+
+#: PServerAdmin/src/Form/User.php:32 PServerAdmin/src/Form/User.php:35
+#: PServerCore/src/Form/Password.php:41 PServerCore/src/Form/Register.php:85
+#: PServerCore/src/Form/Register.php:88
+msgid "Password"
+msgstr ""
+
+#: PServerAdmin/src/Form/User.php:44 PServerAdmin/src/Form/User.php:47
+#: PServerCore/src/Form/Password.php:52 PServerCore/src/Form/Register.php:98
+#: PServerCore/src/Form/Register.php:101
+msgid "Password verify"
+msgstr ""
+
+#: PServerAdmin/src/Form/UserBlock.php:20
+msgid "Expire"
+msgstr ""
+
+#: PServerAdmin/src/Form/UserRole.php:38
+msgid "Role"
+msgstr ""
+
+#: PServerAdmin/src/Form/UserRole.php:52
+msgid "Add Role"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:32 PServerAdmin/src/Form/Vote.php:35
+msgid "URL"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:44
+#: PServerAdmin/view/helper/user-panel/user-donate-history.phtml:8
+#: PServerCore/view/zfc-ticket-system/ticket-system/index.twig:11
+msgid "Type"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:46
+msgid "internal"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:47
+msgid "external"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:48
+#, php-format
+msgid "postback, use \"%s\" as placeholder in the url"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:71
+msgid "Top"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:74
+msgid "Top only for internal"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:83
+msgid "Left"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:86
+msgid "Left only for internal"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:95
+msgid "Delay"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:98
+msgid "Delay only for internal"
+msgstr ""
+
+#: PServerAdmin/src/Form/Vote.php:107 PServerAdmin/src/Form/Vote.php:110
+#: PServerPanel/view/p-server-panel/vote/index.twig:20
+msgid "Timeout"
+msgstr ""
+
+#: PServerCore/language/dummy.php:3
+msgid "Home"
+msgstr ""
+
+#: PServerCore/language/dummy.php:4
+#: PServerCore/view/p-server-core/site/download.twig:12
+msgid "Download"
+msgstr ""
+
+#: PServerCore/language/dummy.php:5
+msgid "ServerInfo"
+msgstr ""
+
+#: PServerCore/language/dummy.php:6
+msgid "FAQ"
+msgstr ""
+
+#: PServerCore/language/dummy.php:7
+msgid "Rules"
+msgstr ""
+
+#: PServerCore/language/dummy.php:8
+msgid "Guides"
+msgstr ""
+
+#: PServerCore/language/dummy.php:9
+msgid "Events"
+msgstr ""
+
+#: PServerCore/language/dummy.php:10
+msgid "Account"
+msgstr ""
+
+#: PServerCore/language/dummy.php:11
+msgid "Account Panel"
+msgstr ""
+
+#: PServerCore/language/dummy.php:12
+msgid "Ticket System"
+msgstr ""
+
+#: PServerCore/language/dummy.php:13
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:27
+#: PServerPanel/view/p-server-panel/character/get-character.twig:4
+#: PServerRanking/view/p-server-ranking/character/index.twig:10
+msgid "Details"
+msgstr ""
+
+#: PServerCore/language/dummy.php:14
+msgid "New"
+msgstr ""
+
+#: PServerCore/language/dummy.php:15
+msgid "Donate"
+msgstr ""
+
+#: PServerCore/language/dummy.php:16
+msgid "Admin Panel"
+msgstr ""
+
+#: PServerCore/language/dummy.php:17
+msgid "Policy"
+msgstr ""
+
+#: PServerCore/language/dummy.php:18
+msgid "Terms & conditions"
+msgstr ""
+
+#: PServerCore/language/dummy.php:19
+msgid "Privacy policy"
+msgstr ""
+
+#: PServerCore/language/dummy.php:20
+msgid "Social"
+msgstr ""
+
+#: PServerCore/language/dummy.php:21
+msgid "Facebook"
+msgstr ""
+
+#: PServerCore/language/dummy.php:22
+msgid "Youtube"
+msgstr ""
+
+#: PServerCore/language/dummy.php:23
+msgid "Forum"
+msgstr ""
+
+#: PServerCore/language/dummy.php:25
+msgid "already in use"
+msgstr ""
+
+#: PServerCore/language/dummy.php:26
+msgid "Must contain at least one digit character"
+msgstr ""
+
+#: PServerCore/language/dummy.php:27
+msgid "Must contain an lowercase letter"
+msgstr ""
+
+#: PServerCore/language/dummy.php:28
+msgid "Must contain an uppercase letter"
+msgstr ""
+
+#: PServerCore/language/dummy.php:29
+msgid ""
+"Must contain a special character, like \"'/~`!@#$%^&*()_-+={}[]|;:\"<>,.?\\\""
+msgstr ""
+
+#: PServerCore/language/dummy.php:30
+msgid "contain a character, which is not allowed"
+msgstr ""
+
+#: PServerCore/language/dummy.php:31
+msgid "Secret Answer is not correct"
+msgstr ""
+
+#: PServerCore/language/dummy.php:32
+msgid "No record matching the input was found"
+msgstr ""
+
+#: PServerCore/language/dummy.php:33
+msgid "A record matching the input was found"
+msgstr ""
+
+#: PServerCore/language/dummy.php:34
+msgid "Your Account is not active, please confirm your email"
+msgstr ""
+
+#: PServerCore/language/dummy.php:35
+msgid "Entry not allowed"
+msgstr ""
+
+#: PServerCore/language/dummy.php:37
+#: PServerAdmin/view/p-server-admin/download/index.phtml:3
+#: PServerAdmin/view/p-server-admin/news/index.phtml:3
+#: PServerAdmin/view/p-server-admin/secret-question/index.phtml:3
+#: PServerAdmin/view/p-server-admin/server-info/index.phtml:3
+#: PServerAdmin/view/p-server-admin/ticket-system-category/index.phtml:3
+#: PServerAdmin/view/p-server-admin/vote/index.phtml:3
+msgid "new"
+msgstr ""
+
+#: PServerCore/language/dummy.php:38
+msgid "open"
+msgstr ""
+
+#: PServerCore/language/dummy.php:39
+msgid "closed"
+msgstr ""
+
+#: PServerCore/language/dummy.php:41
+msgid "Sign In"
+msgstr ""
+
+#: PServerCore/language/dummy.php:42
+msgid "Change Ingame Password"
+msgstr ""
+
+#: PServerCore/language/dummy.php:43 PServerCore/src/Form/ChangePwd.php:57
+#: PServerCore/src/Form/ChangePwdGame.php:57
+msgid "Change Password"
+msgstr ""
+
+#: PServerCore/src/Form/AddEmail.php:31 PServerCore/src/Form/AddEmail.php:34
+#: PServerCore/src/Form/ChangeEmail.php:45
+#: PServerCore/src/Form/ChangeEmail.php:48 PServerCore/src/Form/Register.php:72
+#: PServerCore/src/Form/Register.php:75
+#: PServerPanel/src/Form/ResendRegister.php:46
+#: PServerPanel/src/Form/ResendRegister.php:49
+msgid "Email verify"
+msgstr ""
+
+#: PServerCore/src/Form/ChangeEmail.php:20
+#: PServerCore/src/Form/ChangeEmail.php:25
+#: PServerCore/src/Form/ChangePwd.php:19 PServerCore/src/Form/ChangePwd.php:24
+#: PServerCore/src/Form/ChangePwdGame.php:19
+#: PServerCore/src/Form/ChangePwdGame.php:24
+msgid "Current Web Password"
+msgstr ""
+
+#: PServerCore/src/Form/ChangePwd.php:32 PServerCore/src/Form/ChangePwd.php:37
+#: PServerCore/src/Form/ChangePwdGame.php:32
+#: PServerCore/src/Form/ChangePwdGame.php:37
+msgid "New Password"
+msgstr ""
+
+#: PServerCore/src/Form/ChangePwd.php:45 PServerCore/src/Form/ChangePwd.php:50
+#: PServerCore/src/Form/ChangePwdGame.php:45
+#: PServerCore/src/Form/ChangePwdGame.php:50
+msgid "Confirm new Password"
+msgstr ""
+
+#: PServerCore/src/Form/PwLost.php:34 PServerCore/src/Form/Register.php:47
+#: PServerCore/src/Form/Register.php:50
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:36
+msgid "Username"
+msgstr ""
+
+#: PServerCore/src/Form/PwLost.php:46 PServerCore/src/Form/Register.php:162
+#: PServerPanel/src/Form/Hipopotamya.php:66
+#: PServerPanel/src/Form/Maxigame.php:62
+#: PServerPanel/src/Form/ResendRegister.php:59
+msgid "Please verify you are human."
+msgstr ""
+
+#: PServerCore/src/Form/PwLost.php:58
+msgid "PwLost"
+msgstr ""
+
+#: PServerCore/src/Form/Register.php:118
+msgid "Secret question"
+msgstr ""
+
+#: PServerCore/src/Form/Register.php:119
+msgid "-- select --"
+msgstr ""
+
+#: PServerCore/src/Form/Register.php:134
+msgid "Secret answer"
+msgstr ""
+
+#: PServerCore/src/Form/Register.php:137
+msgid "Answer"
+msgstr ""
+
+#: PServerCore/src/Form/Register.php:150
+#, php-format
+msgid "How did you know about %s?"
+msgstr ""
+
+#: PServerCore/src/Form/Register.php:199
+#: Customize/view/helper/navigation.phtml:67
+#: PServerCore/view/layout/layout.twig:101
+#: PServerCore/view/p-server-core/auth/register.twig:4
+msgid "Register"
+msgstr ""
+
+#: PServerCore/src/Service/Account.php:153
+#: PServerCore/src/Service/ChangeEmail.php:129
+msgid "current password not correct"
+msgstr ""
+
+#: PServerCore/src/Service/AddEmail.php:102
+msgid "You already have an email-address"
+msgstr ""
+
+#: PServerCore/src/Service/AddEmail.php:132
+msgid "Success, please confirm your mail."
+msgstr ""
+
+#: PServerCore/src/Service/ChangeEmail.php:136
+msgid "Your new E-Mail is the same like your current."
+msgstr ""
+
+#: PServerCore/src/Service/ChangeEmail.php:164
+msgid "Success, please confirm your old mail."
+msgstr ""
+
+#: PServerCore/src/Service/User.php:72
+msgid "Authentication failed. Please try again."
+msgstr ""
+
+#: PServerCore/src/Service/User.php:525
+msgid "Please confirm your new ip with your email"
+msgstr ""
+
+#: PServerCore/src/Service/User.php:552
+msgid "Please confirm your secret-login with your email"
+msgstr ""
+
+#: PServerCore/src/Service/User.php:573
+#, php-format
+msgid "You are blocked because %s!, try it again @ %s"
+msgstr ""
+
+#: PServerCore/src/Service/User.php:659
+#, php-format
+msgid "Your IP is blocked!, try it again @ %s"
+msgstr ""
+
+#: PServerCore/src/View/Helper/AgoTimerWidget.php:23
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: PServerCore/src/View/Helper/AgoTimerWidget.php:26
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+msgstr[1] "Stunden"
+
+#: PServerCore/src/View/Helper/AgoTimerWidget.php:29
+msgid "min"
+msgid_plural "mins"
+msgstr[0] ""
+msgstr[1] "mins"
+
+#: PServerCore/src/View/Helper/AgoTimerWidget.php:32
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: PServerCore/src/View/Helper/AgoTimerWidget.php:39
+msgid "jsut now"
+msgstr ""
+
+#: PServerDonateAction/language/dummy.php:3
+#: PServerDonateAction/view/p-server-cms/donate-action/stats/index.twig:4
+msgid "Donate Stats"
+msgstr ""
+
+#: PServerPanel/language/dummy.php:3
+msgid "Character Panel"
+msgstr ""
+
+#: PServerPanel/language/dummy.php:4
+msgid "Vote4Coins"
+msgstr ""
+
+#: PServerPanel/language/dummy.php:5
+#: PServerPanel/src/Form/ResendRegister.php:74
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:87
+#: PServerPanel/view/p-server-panel/resend-register/index.twig:4
+msgid "Resend Register"
+msgstr ""
+
+#: PServerPanel/src/Form/Hipopotamya.php:38
+#: PServerPanel/src/Form/Hipopotamya.php:41
+#: PServerPanel/src/Form/Maxigame.php:34 PServerPanel/src/Form/Maxigame.php:37
+msgid "Code"
+msgstr ""
+
+#: PServerPanel/src/Form/Hipopotamya.php:52
+#: PServerPanel/src/Form/Hipopotamya.php:55
+msgid "Secret"
+msgstr ""
+
+#: PServerPanel/src/Form/Maxigame.php:48 PServerPanel/src/Form/Maxigame.php:51
+msgid "Pass"
+msgstr ""
+
+#: PServerPanel/src/Service/Hipopotamya.php:113
+msgid "E-PIN Code used or invalid!"
+msgstr ""
+
+#: PServerPanel/src/Service/Hipopotamya.php:117
+msgid "E-PIN code or E-PIN password is missing"
+msgstr ""
+
+#: PServerPanel/src/Service/Hipopotamya.php:121
+msgid "Cannot Process E-PIN!"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:112
+#: PServerAdmin/view/helper/user-panel/user-donate-history.phtml:10
+msgid "Success"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:113
+msgid "Wrong api key or password"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:114
+msgid "Merchant account is not active"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:115
+msgid "Merchant account is not found"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:116
+msgid "You can not make transaction through this ip"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:117
+msgid "E-Pin Code or Pw is incorrect"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:118
+msgid "E-Pin code already used"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:119
+msgid "Amount to be loaded is uncertain or unrecorded in the system"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:120
+msgid "Unknown command"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:121
+msgid "Please fill all the necessary fields"
+msgstr ""
+
+#: PServerPanel/src/Service/Maxigame.php:122
+msgid "Unknown error"
+msgstr ""
+
+#: PServerRanking/language/dummy.php:3
+msgid "Ranking"
+msgstr ""
+
+#: PServerRanking/language/dummy.php:4
+#: PServerRankingMain/view/p-server-ranking/ranking/top-player.twig:1
+msgid "Top Player"
+msgstr ""
+
+#: PServerRanking/language/dummy.php:5
+#: PServerRankingMain/view/p-server-ranking/ranking/top-guild.twig:1
+msgid "Top Guild"
+msgstr ""
+
+#: PServerRanking/language/dummy.php:6
+#: PServerRanking/src/Form/GameSearch.php:39
+#: PServerRanking/src/Form/GameSearch.php:49
+#: Customize/view/layout/layout.twig:141 PServerCore/view/layout/layout.twig:65
+msgid "Search"
+msgstr ""
+
+#: PServerRanking/language/dummy.php:7
+#: PServerRanking/view/helper/top-character.phtml:7
+#: PServerPanel/view/p-server-panel/character/get-character.twig:8
+#: PServerRanking/view/p-server-ranking/character/index.twig:14
+#: PServerRanking/view/p-server-ranking/guild/member.twig:6
+#: PServerRanking/view/p-server-ranking/ranking/top-player.twig:11
+#: PServerRanking/view/p-server-ranking/search/char.twig:6
+#: PServerRankingMain/view/p-server-cms/sro-kill/ranking-kill-counter/top-job.twig:7
+#: PServerRankingMain/view/p-server-cms/sro-kill/ranking-kill-counter/top-pvp.twig:7
+#: PServerRankingMain/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:7
+#: PServerRankingMain/view/p-server-ranking/ranking/top-player.twig:7
+#: PServerRankingMain/view/p-server-sro/honor-ranking/index.twig:7
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-hunter.twig:7
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-thieves.twig:7
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-trader.twig:7
+#: PServerSRO/view/p-server-sro/honor-ranking/index.twig:10
+#: PServerSRO/view/p-server-sro/ranking-job/top-hunter.twig:10
+#: PServerSRO/view/p-server-sro/ranking-job/top-thieves.twig:10
+#: PServerSRO/view/p-server-sro/ranking-job/top-trader.twig:10
+#: PServerSROKill/view/p-server-cms/sro-kill/ranking-kill-counter/top-job.twig:14
+#: PServerSROKill/view/p-server-cms/sro-kill/ranking-kill-counter/top-pvp.twig:14
+#: PServerSROUnique/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:14
+#: SROItemPoints/view/p-server-ranking/ranking/top-player.twig:11
+msgid "Character"
+msgstr ""
+
+#: PServerRanking/language/dummy.php:8
+#: PServerAdmin/view/helper/user-panel/user-character.phtml:9
+#: PServerRanking/view/helper/top-character.phtml:8
+#: PServerRanking/view/helper/top-guild.phtml:7
+#: PServerPanel/view/p-server-panel/character/get-character.twig:13
+#: PServerRanking/view/p-server-ranking/character/index.twig:19
+#: PServerRanking/view/p-server-ranking/guild/detail.twig:11
+#: PServerRanking/view/p-server-ranking/ranking/top-guild.twig:10
+#: PServerRanking/view/p-server-ranking/ranking/top-player.twig:12
+#: PServerRanking/view/p-server-ranking/search/char.twig:7
+#: PServerRanking/view/p-server-ranking/search/guild.twig:6
+#: PServerRankingMain/view/p-server-cms/sro-kill/ranking-kill-counter/top-job.twig:8
+#: PServerRankingMain/view/p-server-cms/sro-kill/ranking-kill-counter/top-pvp.twig:8
+#: PServerRankingMain/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:8
+#: PServerRankingMain/view/p-server-ranking/ranking/top-guild.twig:7
+#: PServerRankingMain/view/p-server-ranking/ranking/top-player.twig:8
+#: PServerRankingMain/view/p-server-sro/honor-ranking/index.twig:8
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-hunter.twig:8
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-thieves.twig:8
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-trader.twig:8
+#: PServerSRO/view/p-server-ranking/guild/detail.twig:11
+#: PServerSRO/view/p-server-sro/alliance/detail.twig:31
+#: PServerSRO/view/p-server-sro/honor-ranking/index.twig:11
+#: PServerSRO/view/p-server-sro/ranking-job/top-hunter.twig:11
+#: PServerSRO/view/p-server-sro/ranking-job/top-thieves.twig:11
+#: PServerSRO/view/p-server-sro/ranking-job/top-trader.twig:11
+#: PServerSROKill/view/p-server-cms/sro-kill/ranking-kill-counter/top-job.twig:15
+#: PServerSROKill/view/p-server-cms/sro-kill/ranking-kill-counter/top-pvp.twig:15
+#: PServerSROUnique/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:15
+#: SROItemPoints/view/p-server-ranking/ranking/top-guild.twig:10
+#: SROItemPoints/view/p-server-ranking/ranking/top-player.twig:12
+msgid "Guild"
+msgstr ""
+
+#: PServerRanking/src/Form/GameSearch.php:42
+msgid "Charname, Guild"
+msgstr ""
+
+#: PServerSRO/language/dummy.php:3
+#: PServerSRO/view/helper/ranking-job-trader.phtml:2
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-trader.twig:1
+msgid "Top Trader"
+msgstr ""
+
+#: PServerSRO/language/dummy.php:4
+#: PServerSRO/view/helper/ranking-job-hunter.phtml:2
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-hunter.twig:1
+msgid "Top Hunter"
+msgstr ""
+
+#: PServerSRO/language/dummy.php:5
+#: PServerSRO/view/helper/ranking-job-thieves.phtml:2
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-thieves.twig:1
+msgid "Top Thieves"
+msgstr ""
+
+#: PServerSRO/language/dummy.php:6
+#: PServerRankingMain/view/p-server-sro/honor-ranking/index.twig:1
+msgid "Top Honor"
+msgstr ""
+
+#: PServerSRO/language/dummy.php:7
+#: PServerRankingMain/view/p-server-sro/alliance/index.twig:1
+msgid "Top Alliance"
+msgstr ""
+
+#: PServerSRO/language/dummy.php:8
+msgid "UnStuck"
+msgstr ""
+
+#: PServerSRO/language/dummy.php:9
+msgid "PlayerMap"
+msgstr ""
+
+#: PServerSRO/src/View/Helper/JobTypeToName.php:23
+msgid "Trader"
+msgstr ""
+
+#: PServerSRO/src/View/Helper/JobTypeToName.php:24
+msgid "Thief"
+msgstr ""
+
+#: PServerSRO/src/View/Helper/JobTypeToName.php:25
+msgid "Hunter"
+msgstr ""
+
+#: PServerSROUnique/language/dummy.php:3
+#: PServerRankingMain/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:1
+msgid "Top Unique"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:108
+msgid "Seal of Star"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:109
+msgid "Seal of Moon"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:110
+msgid "Seal of Sun"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:128
+msgid "Female"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:129
+msgid "Male"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:142
+msgid "Chinese"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:142
+msgid "European"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:150
+msgid "Garment"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:151
+msgid "Armor"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:152
+msgid "Shield"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:153
+msgid "Protector"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:154
+msgid "Robe"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:155
+msgid "Light armor"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:156
+msgid "Heavy armor"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:157
+msgid "Devil´s Spirit"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:169
+msgid "Avatar Hat"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:170
+msgid "Avatar Dress"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:171
+msgid "Avatar"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:172
+msgid "Avatar Accessory"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:181
+msgid "Earrings"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:182
+msgid "Necklace"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:183
+msgid "Ring"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:191
+msgid "Sword"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:192
+msgid "Blade"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:193
+msgid "Spear"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:194
+msgid "Glavie"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:195
+msgid "Bow"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:196
+msgid "Onehand sword"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:197
+msgid "Twohand sword"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:198
+msgid "Dual axe"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:199
+msgid "Dark staff"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:200
+msgid "Twohand staff"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:201
+msgid "Crossbow"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:202
+msgid "Dagger"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:203
+msgid "Harp"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:204
+msgid "Light staff"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:221
+msgid "Foot"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:222
+msgid "Head"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:223
+msgid "Shoulder"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:224
+msgid "Chest"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:225
+msgid "Legs"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/ItemData.php:226
+msgid "Hands"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:21
+#, php-format
+msgid "Astral (%s Time/times)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:22
+#, php-format
+msgid "Immortal (%s Time/times)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:23
+#, php-format
+msgid "Damage Absorption %s%% Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:24
+#, php-format
+msgid "Damage %s%% Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:25
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:52
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:53
+#, php-format
+msgid "Parry rate %s%% Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:26
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:56
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:57
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:92
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:93
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:94
+#, php-format
+msgid "HP %s Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:27
+#, php-format
+msgid "HP Recovery %s%% Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:28
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:58
+#, php-format
+msgid "Attack rate %s%% Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:29
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:30
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:31
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:32
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:59
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:60
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:61
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:62
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:95
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:96
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:97
+#, php-format
+msgid "Int %s Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:33
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:34
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:35
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:36
+#, php-format
+msgid "Luck %s%% Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:37
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:38
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:39
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:40
+#, php-format
+msgid "Ignore Monster Defense %s%% Proability"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:41
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:65
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:66
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:98
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:99
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:100
+#, php-format
+msgid "MP %s Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:42
+#, php-format
+msgid "MP Recovery %s%% Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:43
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:44
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:45
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:46
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:88
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:89
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:90
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:91
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:101
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:102
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:103
+#, php-format
+msgid "Str %s Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:47
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:54
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:67
+#, php-format
+msgid "Blocking ratio %s Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:48
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:55
+#, php-format
+msgid "Critical %s"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:49
+#, php-format
+msgid "Maximum Durability %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:50
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:51
+#, php-format
+msgid "Durability %s%% Increase"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:63
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:64
+#, php-format
+msgid "Luck (%s Time/times)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:68
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:69
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:73
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:74
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:78
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:70
+#, php-format
+msgid "%s%% Damage increase (it will apply to Unique monster only)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:71
+#, php-format
+msgid "Repair invalid (Maximum durability %s%% increase)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:72
+#, php-format
+msgid "HP recovery/MP recovery %s%%"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:75
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:76
+#, php-format
+msgid "Available Number of Repair (%s Time/times)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:77
+#, php-format
+msgid "BurnHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:79
+#, php-format
+msgid "DiseaseHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:80
+#, php-format
+msgid "Electric shockHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:81
+#, php-format
+msgid "FearHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:82
+#, php-format
+msgid "FrostHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:83
+#, php-format
+msgid "PosioningHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:84
+#, php-format
+msgid "SleepHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:85
+#, php-format
+msgid "SunHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:86
+#, php-format
+msgid "ZombieHour %s%% Reduce"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Blues/NameMapping.php:87
+#, php-format
+msgid "Steady (%s Time/times)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:218
+#, php-format
+msgid "Phy. atk. pwr. %s ~ %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:224
+#, php-format
+msgid "Mag. atk. pwr. %s ~ %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:230
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:335
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:463
+#, php-format
+msgid "Durability %s/%s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:236
+#, php-format
+msgid "Attack rating %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:241
+#, php-format
+msgid "Critical %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:246
+#, php-format
+msgid "Phy. reinforce %s %% ~ %s %% (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:252
+#, php-format
+msgid "Mag. reinforce %s %% ~ %s %% (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:262
+msgid "Critical 2 (+100%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:325
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:453
+#, php-format
+msgid "Phy. def. pwr. %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:330
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:458
+#, php-format
+msgid "Mag. def. pwr. %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:341
+#, php-format
+msgid "Blocking rate %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:346
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:474
+#, php-format
+msgid "Phy. reinforce %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:351
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:479
+#, php-format
+msgid "Mag. reinforce %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:384
+#, php-format
+msgid "Phy. absorption %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:389
+#, php-format
+msgid "Mag. absorption %s (+%s%%)"
+msgstr ""
+
+#: SROItemDetails/src/SROItemDetails/Item/Properties/Whites.php:469
+#, php-format
+msgid "Parry rate %s (+%s%%)"
+msgstr ""
+
+#: Customize/view/helper/navigation.phtml:69
+#: PServerCore/view/layout/layout.twig:103
+#: PServerCore/view/p-server-core/auth/login.twig:4
+msgid "Login"
+msgstr ""
+
+#: Customize/view/helper/navigation.phtml:72
+#: PServerAdmin/view/layout/admin.twig:99
+#: PServerCore/view/layout/layout.twig:106
+#: PServerCore/view/p-server-core/auth/logout-page.twig:4
+msgid "Logout"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-block-history.phtml:2
+msgid "Block History"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-block-history.phtml:2
+#: PServerAdmin/view/helper/user-panel/user-donate-history.phtml:2
+#: PServerAdmin/view/helper/user-panel/user-login-history.phtml:2
+#: PServerAdmin/view/helper/user-panel/user-ticket.phtml:2
+msgid "last"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-block-history.phtml:9
+msgid "Ban until"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-block-widget.phtml:2
+msgid "Block"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-block-widget.phtml:5
+msgid "User is blocked"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-block-widget.phtml:7
+msgid "until"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-block-widget.phtml:10
+msgid "UnBlock"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-character.phtml:2
+msgid "CharacterList"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-character.phtml:8
+msgid "CharacterName"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-character.phtml:10
+#: PServerRanking/view/helper/top-character.phtml:9
+#: PServerRanking/view/helper/top-guild.phtml:8
+#: PServerPanel/view/p-server-panel/character/get-character.twig:18
+#: PServerRanking/view/p-server-ranking/character/index.twig:24
+#: PServerRanking/view/p-server-ranking/guild/detail.twig:15
+#: PServerRanking/view/p-server-ranking/guild/member.twig:7
+#: PServerRanking/view/p-server-ranking/ranking/top-guild.twig:11
+#: PServerRanking/view/p-server-ranking/ranking/top-player.twig:13
+#: PServerRanking/view/p-server-ranking/search/char.twig:8
+#: PServerRanking/view/p-server-ranking/search/guild.twig:7
+#: PServerRankingMain/view/p-server-ranking/ranking/top-guild.twig:8
+#: PServerRankingMain/view/p-server-ranking/ranking/top-player.twig:9
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-hunter.twig:9
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-thieves.twig:9
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-trader.twig:9
+#: PServerSRO/view/p-server-ranking/guild/detail.twig:15
+#: PServerSRO/view/p-server-sro/alliance/detail.twig:34
+#: PServerSRO/view/p-server-sro/ranking-job/top-hunter.twig:12
+#: PServerSRO/view/p-server-sro/ranking-job/top-thieves.twig:12
+#: PServerSRO/view/p-server-sro/ranking-job/top-trader.twig:12
+#: SROItemPoints/view/p-server-ranking/ranking/top-guild.twig:11
+#: SROItemPoints/view/p-server-ranking/ranking/top-player.twig:13
+msgid "Level"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-coins-widget.phtml:5
+msgid "User has no backendId"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-coins-widget.phtml:7
+msgid "Current Coins"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-donate-history.phtml:2
+msgid "DonateHistory"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-donate-history.phtml:9
+msgid "TransactionId"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-donate-history.phtml:12
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:48
+msgid "Created"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-login-history.phtml:2
+msgid "LoginHistory"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-login-history.phtml:8
+msgid "IP"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-login-history.phtml:9
+msgid "LoginTime"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-role-widget.phtml:2
+msgid "Roles"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-role-widget.phtml:22
+msgid "not allowed to add roles"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-ticket.phtml:2
+msgid "TicketList"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-ticket.phtml:7
+#: PServerCore/view/zfc-ticket-system/ticket-system/index.twig:9
+msgid "Subject"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-ticket.phtml:8
+msgid "Typ"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-ticket.phtml:9
+#: PServerCore/view/zfc-ticket-system/ticket-system/index.twig:10
+msgid "Category"
+msgstr ""
+
+#: PServerAdmin/view/helper/user-panel/user-ticket.phtml:10
+#: PServerCore/view/zfc-ticket-system/ticket-system/index.twig:12
+msgid "LastEdit"
+msgstr ""
+
+#: PServerCore/view/email/tpl/_salutation.phtml:1
+#, php-format
+msgid "Hello %s"
+msgstr ""
+
+#: PServerCore/view/email/tpl/add_email.phtml:4
+#: PServerCore/view/email/tpl/change_email_new.phtml:4
+#: PServerCore/view/email/tpl/change_email_old.phtml:4
+#, php-format
+msgid ""
+"Please confirm your email by clicking on the following link.<br /><br />%s"
+msgstr ""
+
+#: PServerCore/view/email/tpl/country.phtml:4
+#, php-format
+msgid ""
+"Please click on the following link to to confirm your login from your ip."
+"<br /><br />%s"
+msgstr ""
+
+#: PServerCore/view/email/tpl/password.phtml:4
+#, php-format
+msgid ""
+"Please click on the following link to change your password.<br /><br />%s"
+msgstr ""
+
+#: PServerCore/view/email/tpl/register.phtml:3
+msgid "Thank you for registration."
+msgstr ""
+
+#: PServerCore/view/email/tpl/register.phtml:5
+#, php-format
+msgid ""
+"Please confirm your account by clicking on the following link.<br /><br />"
+"%s<br /><br />Hope you will enjoy the game and good luck!"
+msgstr ""
+
+#: PServerCore/view/email/tpl/secret_login.phtml:3
+msgid "that is the confirmation, for the secret-login."
+msgstr ""
+
+#: PServerCore/view/email/tpl/ticket_admin_notification.phtml:1
+#, php-format
+msgid "Ticket UPDATE - \"%s\""
+msgstr ""
+
+#: PServerCore/view/email/tpl/ticket_answer.phtml:3
+#, php-format
+msgid "Answer to your Ticket - \"%s\""
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:13
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:34
+msgid "Controller"
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:53 PServerCore/view/error/index.phtml:8
+msgid "Additional information"
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:56 PServerCore/view/error/404.phtml:80
+#: PServerCore/view/error/index.phtml:11 PServerCore/view/error/index.phtml:35
+msgid "File"
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:60 PServerCore/view/error/404.phtml:84
+#: PServerCore/view/error/index.phtml:15 PServerCore/view/error/index.phtml:39
+msgid "Message"
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:64 PServerCore/view/error/404.phtml:88
+#: PServerCore/view/error/index.phtml:19 PServerCore/view/error/index.phtml:43
+msgid "Stack trace"
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:74 PServerCore/view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr ""
+
+#: PServerCore/view/error/404.phtml:103 PServerCore/view/error/index.phtml:58
+msgid "No Exception available"
+msgstr ""
+
+#: PServerCore/view/error/index.phtml:1
+msgid "An error occurred"
+msgstr ""
+
+#: PServerCore/view/helper/server-info.phtml:2
+msgid "Server Info"
+msgstr ""
+
+#: PServerCore/view/helper/server-info.phtml:6
+#: PServerAdminStatistic/view/p-server-admin-statistic/player/index.twig:28
+msgid "Player Online"
+msgstr ""
+
+#: PServerCore/view/helper/timer.phtml:2
+msgid "Server Timers"
+msgstr ""
+
+#: PServerCore/view/helper/timer.phtml:5
+msgid "Server Time"
+msgstr ""
+
+#: PServerDonateAction/view/p-server-cms/cash-counter/donate-bonus.phtml:2
+msgid "Donate-Bonus"
+msgstr ""
+
+#: PServerDonateAction/view/p-server-cms/cash-counter/donate-bonus.phtml:4
+#, php-format
+msgid "You will get %s%% more until %s"
+msgstr ""
+
+#: PServerRanking/view/helper/inventory-view.phtml:1
+#: SROItemDetails/view/helper/inventory-view.phtml:26
+msgid "Inventory"
+msgstr ""
+
+#: PServerSRO/view/helper/fortress.phtml:3
+msgid "Fortress"
+msgstr ""
+
+#: PServerSRO/view/helper/fortress.phtml:8
+msgid "JG Fortress"
+msgstr ""
+
+#: PServerSRO/view/helper/fortress.phtml:9
+msgid "HT Fortress"
+msgstr ""
+
+#: PServerSRO/view/helper/fortress.phtml:10
+msgid "CT Fortress"
+msgstr ""
+
+#: PServerSRO/view/helper/fortress.phtml:11
+msgid "BT Fortress"
+msgstr ""
+
+#: PServerSRO/view/helper/fortress.phtml:30
+msgid "Not occupied"
+msgstr ""
+
+#: PServerSRO/view/helper/inventory-avatar-view.phtml:19
+msgid "InventoryAvatar"
+msgstr ""
+
+#: PServerSROKill/view/helper/job-kill-history-widget.phtml:5
+#: PServerSROKill/view/helper/job-kill-history.phtml:5
+#, php-format
+msgid "Last %s Job Fights"
+msgstr ""
+
+#: PServerSROKill/view/helper/job-kill-history-widget.phtml:13
+#: PServerSROKill/view/helper/pvp-kill-history-widget.phtml:13
+#: PServerSROUnique/view/helper/unique-kill-list.phtml:14
+#, php-format
+msgid "%s has killed %s %s ago"
+msgstr ""
+
+#: PServerSROKill/view/helper/job-kill-history.phtml:10
+#: PServerSROKill/view/helper/pvp-kill-history.phtml:10
+msgid "Killer"
+msgstr ""
+
+#: PServerSROKill/view/helper/job-kill-history.phtml:11
+#: PServerSROKill/view/helper/pvp-kill-history.phtml:11
+msgid "Death"
+msgstr ""
+
+#: PServerSROKill/view/helper/job-kill-history.phtml:12
+#: PServerSROKill/view/helper/pvp-kill-history.phtml:12
+msgid "Ago"
+msgstr ""
+
+#: PServerSROKill/view/helper/kill-death.phtml:6
+msgid "PVP KD"
+msgstr ""
+
+#: PServerSROKill/view/helper/kill-death.phtml:10
+msgid "Job KD"
+msgstr ""
+
+#: PServerSROKill/view/helper/pvp-kill-history-widget.phtml:5
+#: PServerSROKill/view/helper/pvp-kill-history.phtml:5
+#, php-format
+msgid "Last %s Pvp Fights"
+msgstr ""
+
+#: PServerSROUnique/view/helper/character-each-unique-points.phtml:4
+msgid "Unique Points"
+msgstr ""
+
+#: PServerSROUnique/view/helper/character-each-unique-points.phtml:9
+#: PServerSROUnique/view/helper/killhistory-character.phtml:9
+msgid "Unique Name"
+msgstr ""
+
+#: PServerSROUnique/view/helper/character-each-unique-points.phtml:10
+#: PServerRankingMain/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:9
+#: PServerRankingMain/view/p-server-sro/alliance/index.twig:8
+#: PServerRankingMain/view/p-server-sro/honor-ranking/index.twig:10
+#: PServerSRO/view/p-server-sro/alliance/index.twig:11
+#: PServerSRO/view/p-server-sro/honor-ranking/index.twig:13
+#: PServerSROUnique/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:16
+msgid "Points"
+msgstr ""
+
+#: PServerSROUnique/view/helper/killhistory-character.phtml:4
+#: PServerSROUnique/view/helper/unique-kill-list.phtml:5
+#, php-format
+msgid "Last %s Unique Kills"
+msgstr ""
+
+#: PServerSROUnique/view/helper/killhistory-character.phtml:10
+msgid "ago"
+msgstr ""
+
+#: SROItemDetails/view/helper/item-blues-whites.phtml:25
+msgid "Sort of item"
+msgstr ""
+
+#: SROItemDetails/view/helper/item-blues-whites.phtml:26
+msgid "Mounting part"
+msgstr ""
+
+#: SROItemDetails/view/helper/item-blues-whites.phtml:30
+#, php-format
+msgid "Degree: %s degrees"
+msgstr ""
+
+#: SROItemDetails/view/helper/item-blues-whites.phtml:50
+#, php-format
+msgid "Reqiure level %s"
+msgstr ""
+
+#: SROItemDetails/view/helper/item-blues-whites.phtml:71
+#, php-format
+msgid "Max. no. of magic options: %s Unit"
+msgstr ""
+
+#: SROItemDetails/view/helper/item-blues-whites.phtml:90
+msgid "Able to use Advanced elixir."
+msgstr ""
+
+#: SROItemDetails/view/helper/item-blues-whites.phtml:92
+#, php-format
+msgid "Advanced elixir is in effect [+%s]"
+msgstr ""
+
+#: Customize/view/layout/layout.twig:127 PServerCore/view/layout/layout.twig:51
+#: PServerRanking/view/p-server-ranking/character/index.twig:54
+msgid "Status"
+msgstr ""
+
+#: Customize/view/layout/layout.twig:228
+#: PServerCore/view/layout/layout.twig:165
+msgid ""
+"Your account is not confirmed via email, in order to use all functions you "
+"have to confirm your email."
+msgstr ""
+
+#: Customize/view/p-server-core/index/index.twig:73
+#: PServerCore/view/p-server-core/index/index.twig:31
+msgid "News and Updates"
+msgstr ""
+
+#: Customize/view/p-server-core/site/download.twig:25
+#: PServerCore/view/p-server-core/site/download.twig:19
+msgid "uploading"
+msgstr ""
+
+#: PServerAdmin/view/layout/admin.twig:6 PServerAdmin/view/layout/admin.twig:60
+msgid "PServerAdmin"
+msgstr ""
+
+#: PServerAdmin/view/layout/admin.twig:80
+msgid "Donations"
+msgstr ""
+
+#: PServerAdmin/view/layout/admin.twig:83
+msgid "Total Donations"
+msgstr ""
+
+#: PServerAdmin/view/layout/admin.twig:88
+msgid "New Tickets"
+msgstr ""
+
+#: PServerAdmin/view/layout/admin.twig:97
+msgid "Page"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/donate/statistic.twig:6
+msgid "Statistic Count Donations"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/donate/statistic.twig:22
+msgid "Statistic Sum Donations"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/ticket-system/view.twig:24
+#: PServerCore/view/p-server-core/auth/login.twig:11
+#: PServerCore/view/zfc-ticket-system/ticket-system/index.twig:28
+#: PServerPanel/view/p-server-panel/vote/index.twig:6
+msgid "Close"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:18
+msgid "User is not active"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:32
+msgid "UserId"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:40
+msgid "BackendId"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:44
+msgid "EMail"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:54
+msgid "edit"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:75
+msgid "Helper"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:79
+msgid "Login with"
+msgstr ""
+
+#: PServerAdmin/view/p-server-admin/user-panel/detail.twig:83
+msgid "like search"
+msgstr ""
+
+#: PServerAdminStatistic/view/p-server-admin-statistic/player/index.twig:24
+msgid "Player Online-Statistic"
+msgstr ""
+
+#: PServerAdminStatistic/view/p-server-admin-statistic/user/index.twig:24
+msgid "UserRegister-Statistic"
+msgstr ""
+
+#: PServerAdminStatistic/view/p-server-admin-statistic/user/index.twig:28
+msgid "UserRegister"
+msgstr ""
+
+#: PServerCore/view/error/403.twig:5
+msgid "403 - Forbidden"
+msgstr ""
+
+#: PServerCore/view/error/403.twig:9
+msgid "403 Forbidden"
+msgstr ""
+
+#: PServerCore/view/error/403.twig:10
+msgid "You are not authorized."
+msgstr ""
+
+#: PServerCore/view/p-server-core/account/index.twig:8
+msgid "Change Web Password"
+msgstr ""
+
+#: PServerCore/view/p-server-core/account/index.twig:41
+msgid "Add Email"
+msgstr ""
+
+#: PServerCore/view/p-server-core/account/index.twig:60
+msgid "Change Email"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/add-email.twig:4
+msgid "Add-Email"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/add-email.twig:9
+#: PServerCore/view/p-server-core/auth/change-email-new.twig:9
+msgid "success, your mail is changed"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/change-email-new.twig:4
+#: PServerCore/view/p-server-core/auth/change-email-old.twig:4
+msgid "Change-Email"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/change-email-old.twig:9
+msgid "please confirm your new E-Mail"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/ip-confirm-done.twig:4
+msgid "IP-Confirm"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/ip-confirm-done.twig:9
+msgid "Success, ip confirmed. You can now log in."
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/login.twig:20
+msgid "Forgot password?"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/logout-page.twig:9
+msgid "logout success"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/pw-lost-confirm-done.twig:4
+msgid "Web Password updated"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/pw-lost-confirm-done.twig:9
+msgid "success, web password updated"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/pw-lost-confirm.twig:4
+#: PServerCore/view/p-server-core/auth/pw-lost.twig:4
+msgid "Lost Password"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/pw-lost-done.twig:4
+msgid "Lost Password Confirm"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/pw-lost-done.twig:9
+msgid "please check your email"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/register-confirm.twig:4
+msgid "Register Confirm"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/register-confirm.twig:11
+msgid "register complete"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/register-done.twig:4
+msgid "Register Done"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/register-done.twig:10
+msgid "please confirm your email"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/register-done.twig:12
+msgid "success, you can now login"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/wrong-code.twig:4
+msgid "Error"
+msgstr ""
+
+#: PServerCore/view/p-server-core/auth/wrong-code.twig:9
+msgid "wrong code =("
+msgstr ""
+
+#: PServerCore/view/p-server-core/donate/fail.twig:4
+msgid ""
+"Donate Fail, please contact the payment provider or create a ticket in the "
+"ticketsystem"
+msgstr ""
+
+#: PServerCore/view/p-server-core/donate/index.twig:11
+#: PServerCore/view/p-server-core/donate/index.twig:24
+#: PServerCore/view/p-server-core/donate/index.twig:37
+msgid "Package selection"
+msgstr ""
+
+#: PServerCore/view/p-server-core/donate/success.twig:4
+msgid "Donate Success"
+msgstr ""
+
+#: PServerCore/view/p-server-core/index/index.twig:21
+msgid "Previous"
+msgstr ""
+
+#: PServerCore/view/p-server-core/index/index.twig:25
+msgid "Next"
+msgstr ""
+
+#: PServerCore/view/zfc-ticket-system/ticket-system/index.twig:4
+msgid "new ticket"
+msgstr ""
+
+#: PServerCore/view/zfc-ticket-system/ticket-system/index.twig:13
+msgid "Option"
+msgstr ""
+
+#: PServerCore/view/zfc-ticket-system/ticket-system/index.twig:24
+msgid "View"
+msgstr ""
+
+#: PServerDonateAction/view/p-server-cms/donate-action/stats/index.twig:17
+msgid "Your Bonus per Order"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/character/get-character.twig:2
+msgid "There is a problem with this character, please contact the admin."
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/character/get-character.twig:22
+#: PServerRanking/view/p-server-ranking/character/index.twig:38
+msgid "Strength"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/character/get-character.twig:26
+#: PServerRanking/view/p-server-ranking/character/index.twig:42
+msgid "Intellect"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/character/get-character.twig:30
+#: PServerRanking/view/p-server-ranking/character/index.twig:59
+msgid "LastLogout"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/character/index.twig:4
+msgid "CharacterPanel"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/character/index.twig:10
+msgid "You dont have a character, please create a character to use this panel."
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/character/index.twig:17
+msgid "CharacterSelection"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/character/index.twig:25
+msgid "MainCharacter"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/hipopotamya/index.twig:4
+msgid "Hipopotamya"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/hipopotamya/index.twig:10
+#: PServerPanel/view/p-server-panel/maxigame/index.twig:10
+msgid "Success, coins added."
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/hipopotamya/index.twig:20
+#: PServerPanel/view/p-server-panel/maxigame/index.twig:20
+msgid "Card-Amount"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/hipopotamya/index.twig:21
+#: PServerPanel/view/p-server-panel/maxigame/index.twig:21
+msgid "Reward"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/maxigame/index.twig:4
+msgid "Maxigame"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/resend-register/index.twig:10
+msgid "Resend was successfully sent"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/vote/detail.twig:8
+msgid "You can click vote in"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/vote/index.twig:17
+msgid "Name"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/vote/index.twig:19
+msgid "Timeleft"
+msgstr ""
+
+#: PServerPanel/view/p-server-panel/vote/index.twig:45
+#, php-format
+msgid "%sh"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/character/index.twig:4
+#, php-format
+msgid "Character - %s"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/character/index.twig:20
+#: PServerRanking/view/p-server-ranking/character/index.twig:34
+#, php-format
+msgid "Level %s"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/character/index.twig:28
+msgid "Race"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/character/index.twig:33
+msgid "Job"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/character/index.twig:48
+#: PServerRanking/view/p-server-ranking/guild/detail.twig:20
+#: PServerRanking/view/p-server-ranking/guild/member.twig:9
+#: PServerRankingMain/view/p-server-ranking/ranking/top-guild.twig:10
+#: PServerRankingMain/view/p-server-ranking/ranking/top-player.twig:10
+#: PServerSRO/view/p-server-ranking/guild/detail.twig:20
+#: SROItemPoints/view/p-server-ranking/ranking/top-guild.twig:13
+#: SROItemPoints/view/p-server-ranking/ranking/top-player.twig:14
+msgid "ItemPoints"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/character/index.twig:55
+msgid "Online"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/character/index.twig:74
+msgid "Switch"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/guild/detail.twig:4
+#: PServerSRO/view/p-server-ranking/guild/detail.twig:4
+#, php-format
+msgid "Guild - %s"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/guild/detail.twig:25
+#: PServerRanking/view/p-server-ranking/guild/detail.twig:31
+#: PServerSRO/view/p-server-ranking/guild/detail.twig:25
+#: PServerSRO/view/p-server-ranking/guild/detail.twig:45
+#: PServerSRO/view/p-server-sro/alliance/detail.twig:26
+msgid "Member"
+msgstr ""
+
+#: PServerRanking/view/p-server-ranking/ranking/top-guild.twig:12
+#: PServerRanking/view/p-server-ranking/search/guild.twig:8
+#: PServerRankingMain/view/p-server-ranking/ranking/top-guild.twig:9
+#: PServerSRO/view/p-server-sro/alliance/detail.twig:33
+#: SROItemPoints/view/p-server-ranking/ranking/top-guild.twig:12
+msgid "Members"
+msgstr ""
+
+#: PServerRankingMain/view/p-server-cms/sro-kill/ranking-kill-counter/top-job.twig:1
+msgid "Top JOB KD"
+msgstr ""
+
+#: PServerRankingMain/view/p-server-cms/sro-kill/ranking-kill-counter/top-job.twig:9
+#: PServerRankingMain/view/p-server-cms/sro-kill/ranking-kill-counter/top-pvp.twig:9
+#: PServerSROKill/view/p-server-cms/sro-kill/ranking-kill-counter/top-job.twig:16
+#: PServerSROKill/view/p-server-cms/sro-kill/ranking-kill-counter/top-pvp.twig:16
+msgid "K/D"
+msgstr ""
+
+#: PServerRankingMain/view/p-server-cms/sro-kill/ranking-kill-counter/top-pvp.twig:1
+msgid "Top PVP KD"
+msgstr ""
+
+#: PServerRankingMain/view/p-server-sro/alliance/index.twig:7
+#: PServerSRO/view/p-server-sro/alliance/detail.twig:11
+#: PServerSRO/view/p-server-sro/alliance/index.twig:10
+msgid "Master Guild"
+msgstr ""
+
+#: PServerRankingMain/view/p-server-sro/honor-ranking/index.twig:9
+#: PServerSRO/view/p-server-sro/honor-ranking/index.twig:12
+msgid "Rank"
+msgstr ""
+
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-hunter.twig:10
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-thieves.twig:10
+#: PServerRankingMain/view/p-server-sro/ranking-job/top-trader.twig:10
+#: PServerSRO/view/p-server-sro/ranking-job/top-hunter.twig:13
+#: PServerSRO/view/p-server-sro/ranking-job/top-thieves.twig:13
+#: PServerSRO/view/p-server-sro/ranking-job/top-trader.twig:13
+msgid "Exp"
+msgstr ""
+
+#: PServerSRO/view/p-server-ranking/guild/detail.twig:31
+#: PServerSRO/view/p-server-sro/alliance/detail.twig:32
+msgid "Leader"
+msgstr ""
+
+#: PServerSRO/view/p-server-ranking/guild/detail.twig:38
+msgid "Alliance"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/alliance/detail.twig:4
+#, php-format
+msgid "Alliance - %s"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/alliance/detail.twig:15
+msgid "Master Leader"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:12
+msgid "Towns"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:17
+msgid "Jangan"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:21
+msgid "Donwhang"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:24
+msgid "Hotan"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:27
+msgid "Samarkand"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:30
+msgid "Constantinople"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:33
+msgid "Alexandria (North)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:36
+msgid "Alexandria (South)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:39
+msgid "Baghdad"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:47
+msgid "Zones"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:52
+msgid "Tiger Mountain"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:55
+msgid "Tarim Basin"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:58
+msgid "Karakoram"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:61
+msgid "Taklamakan"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:64
+msgid "Mountain Roc"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:67
+msgid "Central Asia"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:70
+msgid "Asia Minor"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:73
+msgid "Eastern Europe"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:76
+msgid "Storm and Cloud Desert"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:79
+msgid "King's Valley"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:82
+msgid "Kirk Field"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:85
+msgid "Phantom Desert"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:88
+msgid "Flaming Tree"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:96
+msgid "Areas"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:102
+msgid "Donwhang Stone Cave"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:107
+msgid "Donwhang Dungeon B1 (Lv.61~64)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:110
+msgid "Donwhang Dungeon B2 (Lv.64~66)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:113
+msgid "Donwhang Dungeon B3 (Lv.65~68)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:116
+msgid "Donwhang Dungeon B4 (Lv.69~70)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:123
+msgid "Tomb of Qui-Shin"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:128
+msgid "Qin-Shi Tomb B1 (Lv.81~85)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:131
+msgid "Qin-Shi Tomb B2 (Lv.86~90)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:134
+msgid "Qin-Shi Tomb B3 (Lv.90~95)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:137
+msgid "Qin-Shi Tomb B4 (Lv.96~99)"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:140
+msgid "Qin-Shi Tomb B5"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:143
+msgid "Qin-Shi Tomb B6"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:149
+msgid "Temple"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:152
+msgid "Flame Mountain"
+msgstr ""
+
+#: PServerSRO/view/p-server-sro/player-map/index.twig:155
+msgid "Cave of Meditation"
+msgstr ""
+
+#: PServerSROKill/view/p-server-cms/sro-kill/ranking-kill-counter/top-job.twig:4
+msgid "Ranking - TopJob KD"
+msgstr ""
+
+#: PServerSROKill/view/p-server-cms/sro-kill/ranking-kill-counter/top-pvp.twig:4
+msgid "Ranking - TopPvp KD"
+msgstr ""
+
+#: PServerSROUnique/view/p-server-cms/sro-unique/ranking-unique/top-unique.twig:4
+msgid "Ranking - TopUnique"
+msgstr ""

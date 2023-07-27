@@ -1,0 +1,15 @@
+{% extends 'layout/layout' %}
+
+{% block title %}
+    {{ translate('Resend Register') }}
+{% endblock title %}
+
+{% block content %}
+    {% if success == true %}
+        <div class="alert alert-success">
+            {{ translate('Resend was successfully sent') }}
+        </div>
+    {% endif %}
+
+    {{ formWidget(form) }}
+{% endblock content %}

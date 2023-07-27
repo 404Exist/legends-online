@@ -1,0 +1,36 @@
+<h2>{{ translate('Top Honor') }}</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>{{ translate('Character') }}</th>
+            <th>{{ translate('Guild') }}</th>
+            <th>{{ translate('Rank') }}</th>
+            <th>{{ translate('Points') }}</th>
+        </tr>
+        </thead>
+        {% set i = (ranking.getCurrentPageNumber() - 1) * ranking.getDefaultItemCountPerPage() + 1 %}
+        {% for key, rank in ranking %}
+            <tr>
+                <td>{{ i }}</td>
+                <td><a href="{{ url('PServerRanking/character', {'id':rank.getMaster().getChar().getId()}) }}">{{ rank.getMaster().getChar().getName() }}</a></td>
+                <td>
+                    {{
+                    rank.getMaster().getChar().getGuild().getId()>0 ?
+                    ('<a href="'~url('PServerRanking/guild', {'id': rank.getMaster().getChar().getGuild().getId()})~'">'~rank.getMaster().getChar().getGuild().getName()~'</a>')|raw
+                    :
+                    ''
+                    }}
+                </td>
+                <td>{{ rank.getRank() }}</td>
+                <td>{{ rank.getCamp().getGraduateCount() }}</td>
+            </tr>
+            {% set i = i + 1 %}
+        {% endfor %}
+    </table>
+</div>
+
+{% if ranking %}
+    {{ paginationControl(ranking, 'Sliding', 'p-server-core/paginator', {'route' : 'PServerRanking/sro_ranking_honor', 'ajax' : '#content-replace'}) }}
+{% endif %}

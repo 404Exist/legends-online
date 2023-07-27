@@ -1,0 +1,30 @@
+{% extends 'layout/layout' %}
+
+{% block content %}
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>{{ translate('Master Guild') }}</th>
+                <th>{{ translate('Points') }}</th>
+            </tr>
+            </thead>
+            {% set i = (ranking.getCurrentPageNumber() - 1) * ranking.getDefaultItemCountPerPage() + 1 %}
+            {% for key, rank in ranking %}
+                <tr>
+                    <td>{{ i }}</td>
+                    <td><a href="{{ url('PServerRanking/sro_alliance', {'action': 'detail', 'id': rank['id']}) }}">{{ rank['name'] }}</a></td>
+                    <td>{{ rank['points'] }}</td>
+                </tr>
+                {% set i = i + 1 %}
+            {% endfor %}
+        </table>
+    </div>
+
+    {% if ranking %}
+        {{ paginationControl(ranking, 'Sliding', 'p-server-core/paginator', {'route' : 'PServerRanking/sro_alliance'}) }}
+    {% endif %}
+
+{% endblock content %}

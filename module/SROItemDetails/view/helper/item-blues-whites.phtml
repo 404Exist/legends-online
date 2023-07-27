@@ -1,0 +1,95 @@
+<?php
+/** @var \SROItemDetails\Item\ItemData $item */
+$item = $this->item;
+?>
+<?php
+    if ($item->getRefItem()->getRarity() || $item->getBlues()->getInfoLines()) :
+?>
+    <span style="color:#<?= $item->getRefItem()->getRarity() ? 'f2e43d' : '50cecd' ?>;font-weight: bold;">
+<?php
+    endif;
+?>
+        <?= $item->getName() ?> <?= ($item->getAllOptLevel() > 0) ? '[+' . $item->getAllOptLevel() . ']':'' ?>
+<?php
+    if ($item->getRefItem()->getRarity() || $item->getBlues()->getInfoLines()) :
+?>
+    </span>
+<?php
+    endif;
+?>
+<br />
+<br />
+<?php if ($item->getDegree() >= 1) : ?>
+    <?= $item->getRefItem()->getRarity() ? '<b style="color:#f2e43d;">' . $this->translate($item->getSOXName()) . '</b><br />' : '' ?>
+    <span style="color:#efdaa4;">
+        <?= $this->translate('Sort of item') ?>: <?= $this->translate($item->getSortOfItem()) ?><br />
+        <?= $item->getMountingPart() ? $this->translate('Mounting part') . ': ' . $this->translate($item->getMountingPart()) . '<br />' : '' ?>
+        <?php
+        if ($item->getRefItem()->getLevel()) :
+            ?>
+            <?= sprintf($this->translate('Degree: %s degrees'), $item->getDegree()) ?><br />
+        <?php
+        endif;
+        ?>
+    </span>
+    <br />
+    <?php
+    if ($item->getWhites()->getInfoLines()) :
+        foreach ($item->getWhites()->getInfoLines() as $line) : ?>
+            <?= $line ?><br />
+        <?php
+        endforeach;
+        ?>
+        <br />
+    <?php
+    endif;
+    ?>
+    <?php
+    if ($item->getRefItem()->getLevel()) :
+        ?>
+        <?= sprintf($this->translate('Reqiure level %s'), $item->getRefItem()->getLevel()) ?><br />
+        <?php
+    endif;
+    ?>
+    <?php
+    if ($item->getGender()) :
+        ?>
+        <?= $item->getGender() ?><br />
+        <?php
+    endif;
+    ?>
+    <?php
+    if ($item->getRace()) :
+        ?>
+        <?= $this->translate($item->getRace()) ?><br />
+        <?php
+    endif;
+    ?>
+
+    <?php if (!in_array($item->getRefItem()->getTypeIdThird(), [14], true)) : ?>
+        <br />
+        <span style="color:#efdaa4;"><?= sprintf($this->translate('Max. no. of magic options: %s Unit'), $item->getRefItem()->getItemDetail()->getMaxMagicOptCount()) ?></span>
+        <br />
+    <?php endif; ?>
+
+    <?php
+    if ($item->getBlues()->getInfoLines()) : ?>
+        <br />
+        <?php
+        foreach ($item->getBlues()->getInfoLines() as $line) : ?>
+            <b style="color: #<?= $line['color'] ?>"><?= $line['data'] ?></b><br />
+            <?php
+        endforeach;
+    endif;
+    ?>
+
+    <?php if (!in_array($item->getRefItem()->getTypeIdThird(), [13, 14], true)) : ?>
+        <br />
+
+        <?php if (!$item->getBindOptionWhiteItem()) { ?>
+            <?= $this->translate('Able to use Advanced elixir.') ?>
+        <?php } else { ?>
+            <b><?= sprintf($this->translate('Advanced elixir is in effect [+%s]'), $item->getBindOptionWhiteItem()->getOptValue()) ?></b>
+        <?php } ?>
+    <?php endif; ?>
+<?php endif; ?>

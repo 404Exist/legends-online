@@ -1,0 +1,57 @@
+{% extends 'layout/admin' %}
+
+{% do
+    headLink()
+    .appendStylesheet(
+		'https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/modern.min.css',
+		'all'
+    )
+%}
+{% do
+    headScript()
+    .appendFile(
+		'https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/jquery.sceditor.bbcode.min.js',
+		'text/javascript',
+		{'crossorigin' : 'anonymous'}
+    )
+%}
+
+{% block content %}
+
+	{{ formWidget(form) }}
+	{% if (ticket.getType != 2) %}
+		<a href="{{ url('zfc-ticketsystem-admin', {'id':ticket.getId, 'action':'close-ticket'}) }}" class="btn btn-warning btn-sm">
+			<i class="fas fa-times"></i> {{ translate('Close') }}
+		</a>
+	{% endif %}
+	<br />
+	<hr/>
+	{% for key, curEntry in entry %}
+		<label>
+			<a href="{{ url('PServerAdmin/user_detail', {'usrId':curEntry.getUser.getId}) }}">{{ curEntry.getUser.getUsername }}</a>
+			<small>{{ dateTimeFormatTime(curEntry.getCreated) }}</small>
+		</label>
+		<br/>
+		{{ bbCodeParser(curEntry.getMemo()) }}<br />
+		<hr />
+	{% endfor %}
+{% endblock content %}
+
+{% block script %}
+	<script type="text/javascript">
+        jQuery(function() {
+            // with SCEditor
+            jQuery("textarea").sceditor({
+                format: "bbcode",
+                toolbar: "bold,italic,underline|source,left,center,right,justify,size,color,bulletlist,orderedlist,code,horizontalrule,image,email,link,emoticon,youtube",
+                width: "98%",
+                height: "300px",
+                resizeWidth: false,
+                emoticonsRoot : "{{ basePath() }}/minified/",
+                style: "https://cdnjs.cloudflare.com/ajax/libs/sceditor/2.1.3/themes/modern.min.css",
+                locale: "no-NB",
+                bbcodeTrim: true
+            }).sceditor("instance").sourceMode(true);
+        });
+	</script>
+{% endblock script %}

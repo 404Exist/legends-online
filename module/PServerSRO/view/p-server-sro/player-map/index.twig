@@ -1,0 +1,196 @@
+{% extends 'layout/layout' %}
+
+{% block fullContent %}
+<div class="col-12 mb-5">
+    <div class="row">
+        <div class="col-md-3 sidebar-wrapper">
+            <div class="sidebar-menu">
+                <ul class="">
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fa fa-university"></i>
+                            <span>{{ translate('Towns') }}</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#" onclick="xSROMap.FlyView(6434,1044)">{{ translate('Jangan') }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.FlyView(3554,2112)">{{ translate('Donwhang') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.FlyView(114,47.25)">{{ translate('Hotan') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.FlyView(-5184,2889)">{{ translate('Samarkand') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.FlyView(-10681,2584)">{{ translate('Constantinople') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.FlyView(-16147,75)">{{ translate('Alexandria (North)') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.FlyView(-16641,-275)">{{ translate('Alexandria (South)') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.FlyView(-8525,-717)">{{ translate('Baghdad') }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fa fa-compass"></i>
+                            <span>{{ translate('Zones') }}</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(5109,420)">{{ translate('Tiger Mountain') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(2592.75,-5.25)">{{ translate('Tarim Basin') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-1410,-255.75)">{{ translate('Karakoram') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-561,2037)">{{ translate('Taklamakan') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-4401,-141)">{{ translate('Mountain Roc') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-4224,2496)">{{ translate('Central Asia') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-6891,2373)">{{ translate('Asia Minor') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-11853,2979)">{{ translate('Eastern Europe') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-12378,-1344)">{{ translate('Storm and Cloud Desert') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-12996,-3264)">{{ translate('King\'s Valley') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-9360,-777)">{{ translate('Kirk Field') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-10356,-2733)">{{ translate('Phantom Desert') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(-8787,-2370)">{{ translate('Flaming Tree') }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>{{ translate('Areas') }}</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li class="sidebar-submenu-dropdown">
+                                    <a href="#">
+                                        <span>{{ translate('Donwhang Stone Cave') }}</span>
+                                    </a>
+                                    <div class="sidebar-submenu-submenu">
+                                        <ul>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,0,32769)">{{ translate('Donwhang Dungeon B1 (Lv.61~64)') }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,115,32769)">{{ translate('Donwhang Dungeon B2 (Lv.64~66)') }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,230,32769)">{{ translate('Donwhang Dungeon B3 (Lv.65~68)') }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,345,32769)">{{ translate('Donwhang Dungeon B4 (Lv.69~70)') }}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-submenu-dropdown">
+                                    <a href="#">
+                                        <span>{{ translate('Tomb of Qui-Shin') }}</span>
+                                    </a>
+                                    <div class="sidebar-submenu-submenu">
+                                        <ul>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,0,32775)">{{ translate('Qin-Shi Tomb B1 (Lv.81~85)') }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,0,32774)">{{ translate('Qin-Shi Tomb B2 (Lv.86~90)') }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,0,32773)">{{ translate('Qin-Shi Tomb B3 (Lv.90~95)') }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,0,32772)">{{ translate('Qin-Shi Tomb B4 (Lv.96~99)') }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,0,32771)">{{ translate('Qin-Shi Tomb B5') }}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="xSROMap.SetView(0,0,0,32770)">{{ translate('Qin-Shi Tomb B6') }}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(0,0,0,32784)">{{ translate('Temple') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(0,0,0,32786)">{{ translate('Flame Mountain') }}</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="xSROMap.SetView(0,0,0,32785)">{{ translate('Cave of Meditation') }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div style="min-height: 600px;position: relative;">
+                <div id="map" class="mb-5"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock fullContent %}
+
+{% do
+    headLink()
+    .appendStylesheet(basePath('/assets/xSROMap/leaflet/Leaflet.css'))
+    .appendStylesheet(basePath('/assets/xSROMap/leaflet/Leaflet.Geoman.css'))
+    .appendStylesheet(basePath('/assets/xSROMap/leaflet/Leaflet.Easy-Button.css'))
+    .appendStylesheet(basePath('/assets/xSROMap/leaflet/Leaflet.fullscreen.css'))
+%}
+{% do
+    headScript()
+    .appendFile(basePath('/assets/xSROMap/leaflet/Leaflet.min.js'))
+    .appendFile(basePath('/assets/xSROMap/leaflet/Leaflet.Geoman.min.js'))
+    .appendFile(basePath('/assets/xSROMap/leaflet/Leaflet.fullscreen.min.js'))
+    .appendFile(basePath('/assets/xSROMap/xSROMap.js'))
+    .appendFile(basePath('/assets/xSROMap/main.js'))
+%}
+
+{% block script %}
+    <script type="text/javascript">
+        jQuery(function() {
+            {% for char in characters %}
+                xSROMap.AddPlayer("{{ char.CharName16 }}",'<a href="{{ url('PServerRanking/character', {'id':char.CharID}) }}"><b>{{ char.CharName16 }}</b></a><br>', {{ char.PosX }}, {{ char.PosZ }}, {{ char.PosY }}, {{ char.LatestRegion }});
+            {% endfor %}
+        });
+    </script>
+{% endblock script %}

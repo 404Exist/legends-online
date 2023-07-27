@@ -1,0 +1,12 @@
+<?php
+use GameBackend\Entity\SRO\Log\KillDeathCounter;
+
+?>
+<tr>
+    <th><?= $this->translate('PVP KD') ?></th>
+    <th><?= $this->killDeath[KillDeathCounter::CODE_PVP]['kill'] ?? 0 ?>/<?= $this->killDeath[KillDeathCounter::CODE_PVP]['death'] ?? 0 ?></th>
+</tr>
+<tr>
+    <th><?= $this->translate('Job KD') ?></th>
+    <th><?= $this->killDeath[KillDeathCounter::CODE_JOB]['kill'] ?? 0 ?>/<?= $this->killDeath[KillDeathCounter::CODE_JOB]['death'] ?? 0 ?></th>
+</tr>

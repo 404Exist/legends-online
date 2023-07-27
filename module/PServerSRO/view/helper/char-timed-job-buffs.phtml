@@ -1,0 +1,13 @@
+<?php
+if (empty($this->buffs)) {
+    return '';
+}
+?>
+
+<div class="mt-2">
+    <div>
+    <?php foreach ($this->buffs as $buff) : ?>
+        <img width="32px" src="<?= $this->basePath($buff['icon']); ?>" alt="Buff" />
+    <?php endforeach; ?>
+    </div>
+</div>

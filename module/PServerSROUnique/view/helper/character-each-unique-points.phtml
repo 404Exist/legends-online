@@ -1,0 +1,28 @@
+<?php
+if ($this->uniquePointList) :
+    ?>
+    <h3><?= $this->translate('Unique Points') ?></h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th><?= $this->translate('Unique Name') ?></th>
+                <th><?= $this->translate('Points') ?></th>
+            </tr>
+            </thead>
+            <?php
+            /** @var \PServerCMS\SROUnique\Shard\Entity\UniqueRanking $uniquePoints */
+            foreach ($this->uniquePointList as $uniquePoints) :
+                ?>
+                <tr>
+                    <td><?= $this->escapeHtml($uniquePoints->getUniqueInfo()->getName()) ?></td>
+                    <td><?= $this->escapeHtml($uniquePoints->getPoints()) ?></td>
+                </tr>
+                <?php
+            endforeach;
+            ?>
+        </table>
+    </div>
+    <?php
+endif;
+?>
