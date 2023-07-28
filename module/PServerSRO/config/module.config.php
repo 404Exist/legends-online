@@ -370,8 +370,16 @@ return [
     ],
     'pserver' => [
         'ranking' => [
+            'top_honor' => [
+                'label'  => 'Honor',
+                'route' => 'PServerRanking/sro_ranking_honor',
+            ],
+            'top_alliance' => [
+                'label'  => 'Unions',
+                'route' => 'PServerRanking/sro_alliance',
+            ],
             'top_trader' => [
-                'label'  => 'Trader',
+                'label'  => 'Traders',
                 'route' => 'PServerRanking/sro_ranking_job',
                 'params' => [
                     'action' => 'top-trader',
@@ -390,14 +398,6 @@ return [
                 'params' => [
                     'action' => 'top-thieves',
                 ],
-            ],
-            'top_honor' => [
-                'label'  => 'Honor',
-                'route' => 'PServerRanking/sro_ranking_honor',
-            ],
-            'top_alliance' => [
-                'label'  => 'Alliance',
-                'route' => 'PServerRanking/sro_alliance',
             ],
         ],
     ],
